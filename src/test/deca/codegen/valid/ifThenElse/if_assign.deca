@@ -1,0 +1,15 @@
+// Description:
+//    Test else if statements with boolean operations
+//
+// Result:
+//[Begin Result]
+//[End Result]
+//
+// History:
+//    created on 15/01/2025
+
+{
+    while(false){
+        println("c est long");
+    }
+}

@@ -1,0 +1,13 @@
+// Description:
+// Test invalid conversion from String to int
+// Test rule 3.29
+//
+// [Begin Result]
+//invalid_conversion_string_to_int.deca:12:13: Undeclared identifier int. Rule 0.1.
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+{
+    int i = (int); // Erreur : Conversion non autorisée
+}

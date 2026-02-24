@@ -1,0 +1,42 @@
+// Description:
+//    Advanced tests with nested if-else and else if structures.
+//
+// Results:
+//[Begin Result]
+//Value is positive and even.Young adult
+//[End Result]
+//
+// History:
+//    created on 19/12/2024
+
+{
+    int value = 10;
+    if (value > 0) {
+        if (value % 2 == 0) {
+            print("Value is positive and even.");
+        } else {
+            print("Value is positive and odd.");
+        }
+    } else if (value < 0) {
+        if (value % 2 == 0) {
+            print("Value is negative and even.");
+        } else {
+            print("Value is negative and odd.");
+        }
+    } else {
+        print("Value is zero.");
+    }
+
+    // Additional test with more complex conditions
+    if (25 < 18) {
+        print("Minor");
+    } else if (25 >= 18 && 25 <= 65) {
+        if (25 >= 18 && 25 < 30) {
+            print("Young adult");
+        } else {
+            print("Adult");
+        }
+    } else {
+        print("Senior citizen");
+    }
+}

@@ -1,0 +1,19 @@
+// Description:
+//    tests print int
+//
+// [Begin Result]
+//1.00000e+000.00000e+001.22346e+090x1p+00x0p+00x1.d6f346p+26
+// [End Result]
+//
+//
+// Historique:
+//    cree le 01/01/2025
+
+{
+   print(1.0);
+   print(0.0);
+   print(1223456789.0);
+   printx(1.0);
+   printx(0.0);
+   printx(123456789.0);
+}

@@ -1,0 +1,15 @@
+// Description:
+//    Tests a syntactically correct program for comparing a variable to null
+//
+// Results:
+//    No errors.
+//
+// History:
+//    created on 07/01/2025
+
+{
+    Object a = null;
+    if (a == null) {
+        println("a is null");
+    }
+}

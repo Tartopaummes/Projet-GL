@@ -1,0 +1,13 @@
+// Description:
+//    Assign a boolean to a boolean variable
+//
+// Results:
+//    1
+//
+// History:
+//    created on 06/01/2025
+
+{
+        boolean a = true;
+        //print(a);
+}

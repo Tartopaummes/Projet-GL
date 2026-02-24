@@ -1,0 +1,13 @@
+// Description:
+// Test valid cast from float to float
+// Test rule 3.29
+//
+// [Begin Result]
+//Aucun problème détecté
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+{
+    float f = (float)(3.14); // Conversion autorisée : float vers float
+}

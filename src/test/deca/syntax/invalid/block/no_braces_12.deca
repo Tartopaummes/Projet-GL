@@ -1,0 +1,13 @@
+// Description:
+//    Tests a syntactically incorrect program for a block with no braces
+//
+// Results:
+//    Line 12 : Error, unmatched brace, expected a '{'.
+//    test_lex should not raise an error.
+//
+// History:
+//    created on 17/12/2024
+
+
+    println("Hello");
+    println("How are you");

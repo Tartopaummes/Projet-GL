@@ -1,0 +1,17 @@
+// Description:
+//    Test usage of undeclared variable in if-then-else.
+//    Test rule 3.28
+//
+// [Begin Result]
+//undeclared_variable_while.deca:15:8: Undeclared identifier z. Rule 0.1.
+// [End Result]
+//
+// History:
+//    créé le 06/01/2025
+
+{
+    boolean cond = true;
+    while (cond) {
+        z = 5; // Variable 'z' non déclarée
+    }
+}

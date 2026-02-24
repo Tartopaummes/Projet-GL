@@ -1,0 +1,12 @@
+// Description:
+//      test file include
+//      This extension is .decah to avoid it to be tested by the script test
+//
+// Result:
+// No result
+//
+// History:
+//    created on 02/01/2025
+
+{
+    println("First File");

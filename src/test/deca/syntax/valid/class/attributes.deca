@@ -1,0 +1,36 @@
+// Description:
+//    Tests a valid program with a use of a simple class with attributes.
+//
+// Results:
+//
+//
+// History:
+//    created on 07/01/2025
+
+class Object {
+    int a;
+    float b;
+    boolean c;
+    String d;
+
+    int e = 8;
+    float f = 8.0;
+    boolean g = true;
+    String h = "Hello";
+
+    int i, j, k;
+    float l, m, n;
+    boolean o, p, q;
+    String r, s, t;
+
+    int u = 8, v = 9, w = 10;
+    float x = 8.0, y = 9.0, z = 10.0;
+    boolean aa = true, ab = false, ac = true;
+    String ad = "Hello", ae = "World", af = "!";
+
+    int ag, ah, ai = 8;
+    float aj, ak = 9.0, al = 8.0;
+    boolean am, an, ao = true;
+    String ap = "World", aq, ar = "Hello";
+
+}

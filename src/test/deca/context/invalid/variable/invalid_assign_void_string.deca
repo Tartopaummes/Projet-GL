@@ -1,0 +1,15 @@
+// Description:
+//    test invalid assignation between void and string
+//    Test rule 3.17
+//
+// Result:
+// [Begin Result]
+//invalid_assign_void_string.deca:14:8: Variable type cannot be void. Rule 3.17.
+// [End Result]
+//
+// History:
+//    created on 06/01/2025
+
+{
+   void a = "true";
+}

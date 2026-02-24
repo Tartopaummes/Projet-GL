@@ -1,0 +1,15 @@
+// Description:
+//    Test simple with a class nothing and initialise an object of this class
+// Resultat:
+//[Begin Result]
+//[End Result]
+//
+// History:
+//    créé le 13/01/2025
+
+class Test {
+}
+
+{
+    Test t = new Test();
+}

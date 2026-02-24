@@ -1,0 +1,14 @@
+// Description:
+//    Tests a syntactically incorrect program for a method declaration missing a method name
+//
+// Results:
+//    Line 11 : Error, expected method name.
+//
+// History:
+//    created on 07/01/2025
+
+class TestClass {
+    void () {
+        int a = 10;
+    }
+}

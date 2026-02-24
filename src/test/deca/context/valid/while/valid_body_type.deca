@@ -1,0 +1,19 @@
+// Description:
+//    Test compatible types in if-then-else branches.
+//    Test rule 3.35
+//
+//
+//
+// Resultat:
+//
+// History:
+//    créé le 08/01/2025
+
+{
+    int x=0;
+    int y = 42;
+    while (x<y) {
+        y=y-1;
+        x=x+1;
+    }
+}

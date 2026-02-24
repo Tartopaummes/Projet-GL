@@ -1,0 +1,35 @@
+// Description:
+//      test all arithmetic operations
+//
+// Input:
+//[Begin Input]
+//2.5
+//4.0
+//[End Input]
+//
+// Result:
+//[Begin Result]
+//Enter a value for a (float):
+//Enter a value for b (float):
+//a + b = 6.50000e+00
+//a - b = -1.50000e+00
+//a * b = 1.00000e+01
+//a / b = 6.25000e-01
+//[End Result]
+//
+// History:
+//    created on 06/01/2025
+
+{
+    float a;
+    float b;
+
+    println("Enter a value for a (float):");
+    a = readFloat();
+    println("Enter a value for b (float):");
+    b = readFloat();
+    println("a + b = ", a + b);
+    println("a - b = ", a - b);
+    println("a * b = ", a * b);
+    println("a / b = ", a / b);
+}

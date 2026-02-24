@@ -1,0 +1,33 @@
+// Description:
+//    Test protected fields
+// Result:
+//[Begin Result]
+//1
+//2.30000e+00
+//[End Result]
+//
+// History:
+//    created on 14/01/2025
+
+class A {
+    protected int b;
+    protected int a = 1;
+    protected float c = 2.3;
+    protected float d;
+    protected boolean e = true;
+    protected boolean f;
+
+    int getA(){
+        return this.a;
+    }
+
+    float getC(){
+        return this.c;
+    }
+}
+
+{
+    A a = new A();
+    println(a.getA());
+    println(a.getC());
+}

@@ -1,0 +1,24 @@
+// Description:
+//    Call a method with convfloat in params
+//
+// Result:
+//[Begin Result]
+//1.00000e+00
+//[End Result]
+//
+// History:
+//    created on 17/01/2025
+
+class Test {
+    float returnParam(float param){
+        return param;
+    }
+}
+
+
+{
+    Test t = new Test();
+    int a = 1;
+    float d = t.returnParam(a);
+    println(d);
+}

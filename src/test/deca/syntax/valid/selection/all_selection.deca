@@ -1,0 +1,24 @@
+// Description:
+//    Tests a valid program with a use of all possible selection statements for fields and methods.
+//
+// Results:
+//
+//
+// History:
+//    created on 17/12/2024
+
+{
+
+    int a = 10;
+    int a = new Object();
+    a.this_is_a_test = 1;
+    a.this_is_a_test(b, c);
+    a.this_is_a_test = a.this_is_a_test(b, c);
+    a.this_is_a_test(b, c).this_is_a_test = 1;
+    a.a.a.a.a.a.a.a.a.a.a.a(42).a.a.a("Hello").a;
+    b.another_test(c.again, d.again()).again;
+    c.again = 1;
+    this.this_is_a_test = 1;
+    this.a = null;
+
+}

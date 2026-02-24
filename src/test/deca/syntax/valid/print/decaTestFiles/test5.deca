@@ -1,0 +1,7 @@
+// test5.deca
+{
+    print("String and int: ", 123);
+    println("String and boolean: ", true);
+    printx("Multiple values: ", "text", 456, false);
+    printlnx("Mixed values: ", "example", 789, true);
+}

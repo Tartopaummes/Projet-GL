@@ -1,0 +1,15 @@
+// Description:
+//    test invalid double variable declaration
+//    Test rule 3.17
+//
+// [Begin Result]
+//invalid_double_declaration.deca:14:8: a is already defined. Rule 3.17.
+// [End Result]
+//
+// History:
+//    created on 10/01/2025
+
+{
+    int a;
+    int a;
+}

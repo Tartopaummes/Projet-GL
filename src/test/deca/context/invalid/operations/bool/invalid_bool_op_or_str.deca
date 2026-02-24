@@ -1,0 +1,13 @@
+// Description:
+//    test invalid OR between boolean and string
+//
+// [Begin Result]
+//invalid_bool_op_or_str.deca:12:23: Unsupported operation '||' between types string and boolean. Operation '||' supported only between booleans. (Rule 3.33)
+// [End Result]
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+    boolean a = "true" || false;
+}

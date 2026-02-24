@@ -1,0 +1,14 @@
+// Description:
+//    test invalid assignation between void and bool
+//    Test rule 3.28
+//
+// [Begin Result]
+//invalid_assign_void_boolean.deca:13:8: Variable type cannot be void. Rule 3.17.
+// [End Result]
+//
+// History:
+//    cree le 06/01/2025
+
+{
+   void a = true;
+}

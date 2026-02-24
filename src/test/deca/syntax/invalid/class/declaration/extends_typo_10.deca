@@ -1,0 +1,13 @@
+// Description:
+//    Tests a syntactically incorrect program for a class with a typo in "extends"
+//
+// Results:
+//    Line 10 : Error, expected "extends" keyword.
+//
+// History:
+//    created on 07/01/2025
+
+class TestClass extend Object {
+    int a = 10;
+    float b = 10.0;
+}

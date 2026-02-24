@@ -1,0 +1,19 @@
+// Description:
+//    Test simple with a class with one method and one field and an initialization of an object of this class
+// Resultat:
+//[Begin Result]
+//[End Result]
+//
+// History:
+//    créé le 14/01/2025
+
+class Test {
+    int i = 0;
+    void test() {
+        print("Hello, World!");
+    }
+}
+
+{
+    Test t = new Test();
+}

@@ -1,0 +1,13 @@
+// Description:
+//    This deca program test the readFloat and readInt for decompile
+//
+// Result:
+//
+// History:
+//    created on 18/01/2025
+
+{
+  int a = readInt();
+  float b = readFloat();
+
+}

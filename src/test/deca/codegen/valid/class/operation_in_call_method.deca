@@ -1,0 +1,23 @@
+// Description:
+//    Call a method with an operation as param
+//
+// Result:
+//[Begin Result]
+//4.40000e+01
+//[End Result]
+//
+// History:
+//    created on 17/01/2025
+
+class Test {
+    int returnA(int a){
+        return a;
+    }
+}
+
+
+{
+    Test t = new Test();
+    float d = t.returnA(3+4*45/20+32);
+    println(d);
+}

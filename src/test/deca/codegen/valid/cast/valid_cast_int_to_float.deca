@@ -1,0 +1,15 @@
+// Description:
+//  Test valid cast from int to float
+//  Test rule 3.39
+//
+// Result:
+// [Begin Result]
+//4.20000e+01
+// [End Result]
+//
+// History:
+// created on  17/01/2025
+{
+    float i = (float)(42);
+    println(i);
+}

@@ -1,0 +1,13 @@
+// Description:
+//    Tests a valid program for a variable assignation from another variable
+//
+// Results:
+//
+//
+// History:
+//    created on 17/12/2024
+
+{
+        int a = 1;
+        int b = a;
+}

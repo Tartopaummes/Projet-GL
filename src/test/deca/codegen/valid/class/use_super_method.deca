@@ -1,0 +1,32 @@
+// Description:
+//  Use a super method and change the field of the super class
+//
+//Result
+// [Begin Result]
+//10
+// [End Result]
+//
+// History:
+// created on 17/01/2025
+
+class A {
+    int a = 4;
+
+    int returnA(){
+        return this.a;
+    }
+}
+class B extends A {
+}
+
+class C extends B {
+    void setA(){
+        this.a = 10;
+    }
+}
+
+{
+    C c = new C();
+    c.setA();
+    println(c.returnA());
+}

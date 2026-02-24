@@ -1,0 +1,13 @@
+// Description:
+// Test invalid cast from null to a primitive type
+// Test rule 3.29
+//
+// [Begin Result]
+//invalid_null_to_primitive.deca:12:12: Invalid cast from null to int. Rule 3.39.
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+{
+    int i = (int)(null); // Erreur : Conversion de null vers un type primitif non autorisée
+}

@@ -1,0 +1,63 @@
+// Description:
+//    Tests a valid program with a use of a simple class with methods.
+//
+// Results:
+//
+//
+// History:
+//    created on 07/01/2025
+
+class TestMethods {
+    int a = 8;
+    float b = 3.14;
+    boolean c = true;
+    String d = "Hello";
+
+    void method1() {
+        // Simple method with no parameters and no return value
+    }
+
+    int method2(int x) {
+        // Method with one parameter and an int return value
+        return x * 2;
+    }
+
+    float method3(float x, float y) {
+        // Method with two parameters and a float return value
+        return x + y;
+    }
+
+    boolean method4(boolean x, boolean y) {
+        // Method with two parameters and a boolean return value
+        return x && y;
+    }
+
+    String method5(String x, String y) {
+        // Method with two parameters and a String return value
+        return x + y;
+    }
+
+    void method6(int x, float y, boolean z, String w) {
+        // Method with four parameters and no return value
+    }
+
+    int method7(int x, float y, boolean z, String w, TestMethods other) {
+        // Method with four parameters and an int return value
+        return other.method2(x) + x;
+    }
+
+    float method8(int x, float y, boolean z, String w, TestMethods other) {
+        // Method with four parameters and a float return value
+        return other.method3(y, y) + x;
+    }
+
+    void method9(TestMethods other) {
+        // Method with one parameter and an infinite loop
+        return other.method9(other);
+    }
+
+    int method10(TestMethods other) {
+        // Method with one parameter and a call to another method
+        return a;
+    }
+}

@@ -1,0 +1,14 @@
+// Description:
+//    Test simple with a class with one method
+// Resultat:
+//[Begin Result]
+//[End Result]
+//
+// History:
+//    créé le 13/01/2025
+
+class Test {
+
+    void test() {
+    }
+}

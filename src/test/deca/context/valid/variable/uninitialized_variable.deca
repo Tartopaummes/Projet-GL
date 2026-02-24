@@ -1,0 +1,14 @@
+// Description:
+// Test use of uninitialized variable
+// Test rule 3.27
+//
+// Results:
+//  0
+//
+// History:
+// cree le 07/01/2025
+
+{
+    int x;
+    println(x);
+}

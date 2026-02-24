@@ -1,0 +1,13 @@
+// Description:
+//    Test TSTO with declaration
+// Resultat:
+//[Begin Result]
+//12
+//[End Result]
+//
+// History:
+//    créé le 14/01/2025
+
+{
+    println(1+(1+(1+(1+(1+(1+(1+(1+(1+(1+(1+1)))))))))));
+}

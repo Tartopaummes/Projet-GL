@@ -1,0 +1,27 @@
+// Description:
+//      test valid for operation NOT with AND
+//
+// Result:
+//[Begin Result]
+//OK
+//OK
+//[End Result]
+//
+// History:
+//    created on 02/01/2025
+
+{
+
+   // NOT
+   if (! true && true){
+        println("KO");
+   }else{
+        println("OK");
+   }
+
+  if (true && ! false){
+       println("OK");
+  }else{
+       println("KO");
+  }
+}

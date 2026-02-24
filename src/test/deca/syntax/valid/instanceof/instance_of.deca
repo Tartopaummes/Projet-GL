@@ -1,0 +1,28 @@
+// Description:
+//    Advanced tests with instance of.
+//
+// Results:
+//    TODO
+//
+// History:
+//    created on 06/01/2025
+
+{
+    int a = 10;
+    float b = 10.0;
+    boolean c = true;
+    String d = "Hello";
+
+    if (a instanceof int) {
+        print("a is an int");
+    }
+    if (b instanceof float) {
+        print("b is a float");
+    }
+    if (c instanceof boolean) {
+        print("c is a boolean");
+    }
+    if (d instanceof String) {
+        print("d is a String");
+    }
+}

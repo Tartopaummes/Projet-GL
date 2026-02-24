@@ -1,0 +1,25 @@
+// Description:
+//  Test valid cast from float to int
+//  Test rule 3.39
+//
+// Result:
+// [Begin Result]
+//42
+//42
+//42
+//42
+//42
+//0
+// [End Result]
+//
+// History:
+// created on  17/01/2025
+{
+    println((int)(42.0));
+    println((int)(42.2));
+    println((int)(42.5));
+    println((int)(42.9));
+    printlnx((int)(42.9));
+    println((int)(0.0));
+
+}

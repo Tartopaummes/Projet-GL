@@ -1,0 +1,16 @@
+// Description:
+//    tests print and println with integers
+//
+// [Begin Result]
+//123456789
+//123456789
+//
+// [End Result]
+//
+// Historique:
+//    cree le 01/01/2025
+
+{
+   println(123456789);
+   println(123456789);
+}

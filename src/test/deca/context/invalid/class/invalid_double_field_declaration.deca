@@ -1,0 +1,21 @@
+// Description:
+//    Test of a double declaration field (of the same type) in the same method
+//    Test rule 2.4
+//
+// Result:
+// [Begin Result]
+//invalid_double_field_declaration.deca:16:8: Field myField is already declared in class. Rule 2.4.
+// [End Result]
+//
+// History:
+//    created on 12/01/2025
+
+
+class MyClass {
+    int myField;
+    int myField = 1 ;
+}
+
+{
+    //empty main
+}

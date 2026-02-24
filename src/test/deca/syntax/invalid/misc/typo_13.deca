@@ -1,0 +1,17 @@
+// Description:
+//    Tests a syntactically incorrect program with a typo (equivalent to an unknown token)
+//    This test is commented until function calling is implemented. printxln is parsed as a function call.
+//    !! Rename the file !!
+//
+// Results:
+//    Line 13 : Error, unopened brace.
+//    Line 12 : Error, unknown token. (This will be the error once function calling is implemented)
+//
+// History:
+//    created on 17/12/2024
+
+}
+// {
+//    printxln("I am not valid ;)");
+// }
+

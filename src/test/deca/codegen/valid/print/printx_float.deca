@@ -1,0 +1,21 @@
+// Description:
+//    tests printx and printlnx with hexadecimal floats
+//
+// [Begin Result]
+//0x1p+00x0p+00x1.d6f346p+260x1p+0
+//0x0p+0
+//0x1.d6f346p+26
+//
+// [End Result]
+//
+// Historique:
+//    cree le 01/01/2025
+
+{
+   printx(1.0);
+   printx(0.0);
+   printx(123456789.0);
+   printlnx(1.0);
+   printlnx(0.0);
+   printlnx(123456789.0);
+}

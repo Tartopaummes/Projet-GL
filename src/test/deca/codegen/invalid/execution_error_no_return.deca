@@ -1,0 +1,25 @@
+// Description:
+//    Test arithmetic overflow with float operation minus
+//
+// Result:
+//[Begin Result]
+//Error: No return reached in a non-void method
+//[End Result]
+//
+// History:
+//    created on 17/01/2025
+
+
+class MyClass{
+    int myMethod(boolean a){
+        if(a){
+            return 1;
+        }
+    }
+
+}
+{
+    MyClass m = new MyClass();
+    m.myMethod(false);
+
+}

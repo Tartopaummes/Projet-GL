@@ -1,0 +1,19 @@
+// Description:
+//    Tests a syntactically correct program for returning null from a method
+//
+// Results:
+//    No errors.
+//
+// History:
+//    created on 07/01/2025
+
+class Object {
+    Object getNull() {
+        return null;
+    }
+}
+
+{
+    Object a = new Object();
+    a.getNull();
+}

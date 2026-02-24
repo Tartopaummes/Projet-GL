@@ -1,0 +1,14 @@
+// Description:
+// Test invalid implicit conversion from float to int
+// Test rule 3.30
+//
+// [Begin Result]
+//invalid_implicit_conversion.deca:13:12: Incompatible types, expected int but got float. Rule 3.28.
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+{
+    float f = 3.14;
+    int x = f; // Erreur : Conversion implicite non autorisée
+}

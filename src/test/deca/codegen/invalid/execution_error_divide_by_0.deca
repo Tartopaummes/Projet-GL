@@ -1,0 +1,14 @@
+// Description:
+//    Test division by 0 error
+//
+// Result:
+//[Begin Result]
+//Error: Division by 0 encountered
+//[End Result]
+//
+// History:
+//    created on 09/01/2025
+{
+
+    int a = 2 / 0;
+}

@@ -1,0 +1,25 @@
+// Description:
+//    Set a class field with setter
+//
+// Result:
+//[Begin Result]
+//10
+//[End Result]
+//
+// History:
+//    created on 17/01/2025
+
+class Test {
+    int c ;
+
+    void setC(int c){
+        this.c = c;
+    }
+}
+
+
+{
+    Test t = new Test();
+    t.setC(10);
+    println(t.c);
+}

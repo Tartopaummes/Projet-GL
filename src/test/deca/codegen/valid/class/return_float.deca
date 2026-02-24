@@ -1,0 +1,42 @@
+// Description:
+//    Test returns on a class
+//
+// Result:
+//[Begin Result]
+//1.00000e+00
+//2.00000e+00
+//1.00000e+00
+//4.00000e+00
+//[End Result]
+//
+// History:
+//    created on 14/01/2025
+
+
+class A {
+     float a = 1;
+
+     float myMethod() {
+         return 1.0;
+     }
+
+     float myMethod2(float c) {
+         return c;
+     }
+
+     float myMethod3() {
+         return this.a;
+     }
+
+     float myMethod4(float c) {
+         return (this.a + 1.0) * c;
+     }
+}
+
+{
+    A a = new A();
+    println(a.myMethod());
+    println(a.myMethod2(2.0));
+    println(a.myMethod3());
+    println(a.myMethod4(2.0));
+}

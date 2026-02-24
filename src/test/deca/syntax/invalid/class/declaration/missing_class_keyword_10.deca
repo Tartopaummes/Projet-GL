@@ -1,0 +1,13 @@
+// Description:
+//    Tests a syntactically incorrect program for a class with a missing "class" keyword
+//
+// Results:
+//    Line 10 : Error, expected "class" keyword.
+//
+// History:
+//    created on 07/01/2025
+
+TestClass {
+    int a = 10;
+    float b = 10.0;
+}

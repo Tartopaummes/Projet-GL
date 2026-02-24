@@ -1,0 +1,16 @@
+// Description:
+//      test valid for modulo operation.
+//      Test part of rule 3.33
+//
+// Resultats:
+//    0
+//    3
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+   // MOD
+   println(6%2);
+   println(3%5);
+}

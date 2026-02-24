@@ -1,0 +1,13 @@
+// Description:
+//    Assign an int to an int variable
+//
+// Results:
+//    1
+//
+// History:
+//    created on 06/01/2025
+
+{
+        int a = 1;
+        println(a);
+}

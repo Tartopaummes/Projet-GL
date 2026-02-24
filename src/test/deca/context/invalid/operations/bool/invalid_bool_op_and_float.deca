@@ -1,0 +1,13 @@
+// Description:
+//    test invalid AND between boolean and float
+//
+// [Begin Result]
+//invalid_bool_op_and_float.deca:12:21: Unsupported operation '&&' between types boolean and float. Operation '&&' supported only between booleans. (Rule 3.33)
+// [End Result]
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+    boolean a = true && 45.4;
+}

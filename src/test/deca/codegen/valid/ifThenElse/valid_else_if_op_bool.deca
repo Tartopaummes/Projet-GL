@@ -1,0 +1,85 @@
+// Description:
+//    Test else if statements with boolean operations
+// Resultat:
+//[Begin Result]
+//True
+//False
+//False
+//True
+//True
+//False
+//True
+//True
+//True
+//[End Result]
+//
+// History:
+//    créé le 08/01/2025
+
+{
+    boolean a = true;
+    boolean b = false;
+
+    //TRUE
+    if (a) {
+        println("True");
+    }else{
+        println("Shouldn't be printed");
+    }
+    //FALSE
+    if (b) {
+        println("Shouldn't be printed");
+    }else{
+        println("False");
+    }
+
+    //FALSE
+    if (b && a ) {
+        println("Shouldn't be printed");
+    }else{
+        println("False");
+    }
+
+    //TRUE
+    if (b || a ) {
+        println("True");
+    }else{
+        println("Shouldn't be printed");
+    }
+
+    //TRUE
+    if (! b) {
+        println("True");
+    }else{
+        println("Shouldn't be printed");
+    }
+
+    //FALSE
+    if (! a) {
+        println("Shouldn't be printed");
+    }else{
+        println("False");
+    }
+
+    //TRUE
+    if ((! b) && ((b && a || a ))) {
+        println("True");
+    }else{
+        println("Shouldn't be printed");
+    }
+
+     //TRUE
+     if (a==a) {
+        println("True");
+    }else{
+        println("Shouldn't be printed");
+    }
+
+    //TRUE
+     if (a!=b) {
+        println("True");
+    }else{
+        println("Shouldn't be printed");
+    }
+
+}

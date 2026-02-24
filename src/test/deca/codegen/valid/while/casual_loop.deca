@@ -1,0 +1,21 @@
+// Description:
+//    Test simple while statement created by a casual loop
+// Resultat:
+//[Begin Result]
+//0
+//1
+//2
+//3
+//4
+//[End Result]
+//
+// History:
+//    créé le 09/01/2025
+
+{
+    int i = 0;
+    while (i < 5){
+        println(i);
+        i = i + 1;
+    }
+}

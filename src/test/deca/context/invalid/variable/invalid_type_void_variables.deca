@@ -1,0 +1,13 @@
+// Description:
+//      Test invalid variable type void
+// Test rule 3.29
+//
+// [Begin Result]
+//invalid_type_void_variables.deca:12:8: Variable type cannot be void. Rule 3.17.
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+{
+   void a ;
+}

@@ -1,0 +1,15 @@
+// Description:
+//  Test valid cast from null to a class type
+//  Test rule 3.39
+//
+//Result
+// [Begin Result]
+// [End Result]
+//
+// History:
+// created on 07/01/2025
+class MyClass {}
+
+{
+    MyClass obj = (MyClass)(null);
+}

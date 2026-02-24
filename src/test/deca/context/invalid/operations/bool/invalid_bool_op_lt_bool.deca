@@ -1,0 +1,13 @@
+// Description:
+//    test invalid LT between int and boolean
+//
+// [Begin Result]
+//invalid_bool_op_lt_bool.deca:12:18: Unsupported operation '<' between types int and boolean. Operation '<' supported only between integer(s) and(or) float(s). (Rule 3.33)
+// [End Result]
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+    boolean a = 1 < true;
+}

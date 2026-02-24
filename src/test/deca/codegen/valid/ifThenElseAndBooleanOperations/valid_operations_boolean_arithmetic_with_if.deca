@@ -1,0 +1,204 @@
+// Description:
+//      test valid for boolean operation (comparison between floats and integers) with if then else
+//      Equivalent of ../operations.valid_operations_boolean_arithmetic.deca but test the output
+//
+// Result:
+//[Begin Result]
+//EQ
+//OK
+//OK
+//OK
+//OK
+//NEQ
+//OK
+//OK
+//OK
+//OK
+//LT
+//OK
+//OK
+//OK
+//OK
+//GT
+//OK
+//OK
+//OK
+//OK
+//LEQ
+//OK
+//OK
+//OK
+//OK
+//GEQ
+//OK
+//OK
+//OK
+//OK
+//[End Result]
+// History:
+//    created on  02/01/2025
+
+{
+    //EQ
+    println("EQ");
+    if (3 == 4){
+        println("KO");
+    }else{
+        println("OK");
+    }
+
+    if (3.3 == 6){
+        println("KO");
+    }else{
+        println("OK");
+    }
+
+    if (6 == 3.3){
+        println("KO");
+    }else{
+        println("OK");
+    }
+
+    if (4.4 == 4.4){
+        println("OK");
+    }else{
+        println("KO");
+    }
+
+    //NEQ
+    println("NEQ");
+    if (3 != 4){
+        println("OK");
+    }else{
+        println("KO");
+    }
+
+    if (3 != 4){
+        println("OK");
+    }else{
+        println("KO");
+    }
+
+    if (6 != 3.3){
+        println("OK");
+    }else{
+        println("KO");
+    }
+
+    if (4.4 != 4.4){
+        println("KO");
+    }else{
+        println("OK");
+    }
+
+    //LT
+    println("LT");
+
+    if (3 < 4){
+        println("OK");
+    }else{
+        println("KO");
+    }
+
+    if (3.3 < 6){
+        println("OK");
+    }else{
+        println("KO");
+    }
+
+    if (6 < 3.3){
+        println("KO");
+    }else{
+        println("OK");
+    }
+
+    if (4.4 < 4.4){
+        println("KO");
+    }else{
+        println("OK");
+    }
+
+
+    //GT
+    println("GT");
+
+    if (3 > 4){
+        println("KO");
+    }else{
+        println("OK");
+    }
+
+    if (3.3 > 6){
+        println("KO");
+    }else{
+        println("OK");
+    }
+
+    if (6 > 3.3){
+        println("OK");
+    }else{
+        println("KO");
+    }
+
+    if (4.4 > 4.4){
+        println("KO");
+    }else{
+        println("OK");
+    }
+
+    //LEQ
+    println("LEQ");
+
+    if (3 <= 4){
+        println("OK");
+    }else{
+        println("KO");
+    }
+
+    if (3.3 <= 6){
+        println("OK");
+    }else{
+        println("KO");
+    }
+
+    if (6 <= 3.3){
+        println("KO");
+    }else{
+        println("OK");
+    }
+
+    if (4.4 <= 4.4){
+        println("OK");
+    }else{
+        println("KO");
+    }
+
+
+    //GEQ
+    println("GEQ");
+
+    if (3 >= 4){
+        println("KO");
+    }else{
+        println("OK");
+    }
+
+    if (3.3 >= 6){
+        println("KO");
+    }else{
+        println("OK");
+    }
+
+    if (6 >= 3.3){
+        println("OK");
+    }else{
+        println("KO");
+    }
+
+    if (4.4 >= 4.4){
+        println("OK");
+    }else{
+        println("OK");
+    }
+
+}

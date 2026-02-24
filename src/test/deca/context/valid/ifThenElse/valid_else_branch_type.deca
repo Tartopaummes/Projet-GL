@@ -1,0 +1,16 @@
+// Description:
+//    Test valid type in else-branch.
+//    Test rule 3.35
+// Resultat:
+//  result=42
+// History:
+//    créé le 08/01/2025
+
+{
+    int result;
+    if (true) {
+        result = 42;
+    } else {
+        result = 7; // Type compatible
+    }
+}

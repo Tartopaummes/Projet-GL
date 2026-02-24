@@ -1,0 +1,11 @@
+// Description:
+//    Tests a syntactically incorrect program for a class with crossed braces
+//
+// Results:
+//    Line 10 : Error, unmatched brace, expected a '{'.
+//
+// History:
+//    created on 07/01/2025
+
+}
+class TestClass {

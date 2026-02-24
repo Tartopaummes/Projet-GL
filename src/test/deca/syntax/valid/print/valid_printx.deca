@@ -1,0 +1,13 @@
+// Description:
+//    Tests a valid program for a printx call
+//
+// Results:
+//    Hello Hexgent 0x423c0000. You shouldn't skip lines.
+//
+// History:
+//    created on 17/12/2024
+
+{
+        printx("Hello Hexgent ", 47.0, ". ");
+        printx("You shouldn't skip lines.");
+}

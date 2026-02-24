@@ -1,0 +1,23 @@
+// Description:
+//    Test compatible types in if-then-else branches.
+//    Test rule 3.36
+//
+//
+//
+// Resultat:
+//
+// History:
+//    créé le 08/01/2025
+
+{
+    float x=0;
+    float y = 42.0;
+    int z=0;
+    int n=10;
+    while ((x<y)&&(z<n)) {
+        y=y-z;
+        x=x+z;
+        z=z+1;
+    }
+    print(x);
+}

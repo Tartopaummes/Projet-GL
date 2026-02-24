@@ -1,0 +1,58 @@
+// Description:
+//      test valid for arithmetic operations
+//      Test part of rule 3.33
+//
+// Resultats: Le format des flottants n'est pas conforme
+//    7
+//    7.30000e+00
+//    7.30000e+00
+//    6.60000e+00
+//
+//    -1
+//    -0.7
+//    0.7
+//    0
+//
+//    12
+//    1.32000e+01
+//    1.32000e+01
+//    1.08900e+01
+//
+//    0.75
+//    0.825
+//    ??
+//    1
+//
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+    //PLUS
+    println(3 + 4);
+    println(3.3 + 4);
+    println(4 + 3.3);
+    println(3.3 + 3.3);
+    println();
+
+    //MINUS
+    println(3 - 4);
+    println(3.3 - 4);
+    println(4 - 3.3);
+    println(3.3 - 3.3);
+    println();
+
+    //MULT
+    println(3 * 4);
+    println(3.3 * 4);
+    println(4 * 3.3);
+    println(3.3 * 3.3);
+    println();
+
+    //DIVIDE
+    println(3 / 4);
+    println(3.3 / 4);
+    println(4 / 3.3);
+    println(3.3 / 3.3);
+
+}

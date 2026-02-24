@@ -1,0 +1,25 @@
+// Description:
+//    Test of use of instanceof with result false
+//    Test rule 3.40
+//
+// Result:
+//false
+//
+// History:
+//    created on 1801/2025
+
+class Dummy {
+}
+class Test {
+}
+
+
+{
+    Dummy d = new Dummy();
+    boolean result = d instanceof Test;
+    if(result){
+        println("true");
+    }else{
+        println("false");
+    }
+}

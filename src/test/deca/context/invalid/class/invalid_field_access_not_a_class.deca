@@ -1,0 +1,16 @@
+// Description:
+//    Access to a protected object field in main
+//    Test rule 3.66
+//
+// Result:
+// [Begin Result]
+//invalid_field_access_not_a_class.deca:15:12: Object is not a class. Rule 3.65.
+// [End Result]
+//
+// History:
+//    created on 15/01/2025
+
+{
+    int a = 4;
+    int d = a.method;
+}

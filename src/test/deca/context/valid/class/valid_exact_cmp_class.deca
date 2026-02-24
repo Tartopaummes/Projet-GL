@@ -1,0 +1,135 @@
+// Description:
+//    Test of eq and neq between class
+//    Test rule 3.33
+//
+// Result:
+//d1 is different from d2
+//d1 is equal to d1
+//d1 is different from null
+//null is different from d1
+//d3(null) is equal to null
+//null is equal to d3(null)
+//null is equal to null
+//
+//d1 is different from d2
+//d1 is equal to d1
+//d1 is different from null
+//null is different from d1
+//d1 is different from d3(null)
+//d3(null) is different from d1
+//null is equal to d3(null)
+//d3(null) is equal to null
+//null is equal to null
+//
+// History:
+//    created on 14/01/2025
+
+class Dummy {
+}
+
+
+{
+    Dummy d1 = new Dummy();
+    Dummy d2 = new Dummy();
+    Dummy d3 = null;
+
+    //EQ
+    if(d1 == d2){
+        println("d1 shouldn't be equal to d2");
+    }else{
+        println("d1 is different from d2");
+    }
+
+    if(d1 == d1){
+        println("d1 is equal to d1");
+    }else{
+        println("d1 shouldn't be different from d1");
+    }
+
+    if(d1 == null){
+        println("d1 shouldn't be equal to null");
+    }else{
+        println("d1 is different from null");
+    }
+
+    if(null == d1){
+        println("null shouldn't be equal to d1");
+    }else{
+        println("null is different from d1");
+    }
+
+    if(d3 == null){
+        println("d3  shouldn't be different from null");
+    }else{
+        println("d3(null) is equal to null");
+    }
+
+    if(null == d3){
+        println("null  shouldn't be different from d3(null)");
+    }else{
+        println("null is equal to d3(null)");
+    }
+
+    if(null == null){
+        println("null  shouldn't be different from null");
+    }else{
+        println("null is equal to null");
+    }
+
+    println();
+
+    //NEQ
+    if(d1 != d2){
+        println("d1 is different from d2");
+    }else{
+        println("d1 shouldn't be equal to d2");
+    }
+
+    if(d1 != d1){
+        println("d1 shouldn't be different from d1");
+    }else{
+        println("d1 is equal to d1");
+    }
+
+    if(d1 != null){
+        println("d1 is different from null");
+    }else{
+        println("d1 shouldn't be equal to null");
+    }
+
+    if(null != d1){
+        println("null is different from d1");
+    }else{
+        println("null shouldn't be equal to d1");
+    }
+
+    if(d1 != d3){
+        println("d1 is different from d3(null)");
+    }else{
+        println("d1 shouldn't be equal to d3(null)");
+    }
+
+    if(d3 != d1){
+        println("d3(null) is different from d1");
+    }else{
+        println("d3(null) shouldn't be equal to d1");
+    }
+
+    if(null != d3){
+        println("null shouldn't be different from d3(null)");
+    }else{
+        println("null is equal to d3(null)");
+    }
+
+    if(d3 != null){
+        println("d3(null) shouldn't be different from null");
+    }else{
+        println("d3(null) is equal to null");
+    }
+
+    if(null != null){
+        println("null shouldn't be different from null");
+    }else{
+        println("null is equal to null");
+    }
+}

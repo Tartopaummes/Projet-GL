@@ -1,0 +1,13 @@
+// Description:
+//    test invalid print boolean
+//
+// [Begin Result]
+//invalid_print_bool.deca:12:9: Can't print type boolean. Type must be int, float or string. (Rule 3.31)
+// [End Result]
+//
+// Historique:
+//    cree le 06/01/2025
+
+{
+   print(false);
+}

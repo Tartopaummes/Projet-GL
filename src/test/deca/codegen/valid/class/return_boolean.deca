@@ -1,0 +1,58 @@
+// Description:
+//    Test returns on a class
+//
+// Result:
+//[Begin Result]
+//true
+//true
+//false
+//false
+//[End Result]
+//
+// History:
+//    created on 14/01/2025
+
+
+class A {
+     boolean a = false;
+
+     boolean myMethod() {
+         return true;
+     }
+
+     boolean myMethod2(boolean c) {
+         return c;
+     }
+
+     boolean myMethod3() {
+         return this.a;
+     }
+
+     boolean myMethod4(boolean c) {
+         return (this.a && true) || (false && c);
+     }
+}
+
+{
+    A a = new A();
+    if (a.myMethod()) {
+        println("true");
+    } else {
+        println("false");
+    }
+    if (a.myMethod2(true)) {
+        println("true");
+    } else {
+        println("false");
+    }
+    if (a.myMethod3()) {
+        println("true");
+    } else {
+        println("false");
+    }
+    if (a.myMethod4(true)) {
+        println("true");
+    } else {
+        println("false");
+    }
+}

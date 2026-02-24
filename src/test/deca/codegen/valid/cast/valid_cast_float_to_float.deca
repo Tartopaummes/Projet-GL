@@ -1,0 +1,24 @@
+// Description:
+// Test valid cast from float to float
+// Test rule 3.39
+//
+// Result
+// [Begin Result]
+//3.14000e+00
+//3.14000e+00
+//0x1.91eb86p+1
+// [End Result]
+//
+// History:
+// created on 14/01/2025
+{
+    float f = 3.14;
+
+    float f2 = (float)(f);
+    println(f2);
+
+    println((float)(f));
+    printlnx((float)(f));
+
+
+}

@@ -1,0 +1,12 @@
+// Description:
+//    Tests a syntactically incorrect program for a cast expression missing parentheses
+//
+// Results:
+//    Line 11 : Error, expected '('.
+//
+// History:
+//    created on 07/01/2025
+
+{
+    int a = int) 10;
+}

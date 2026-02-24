@@ -1,0 +1,23 @@
+// Description:
+//    Test of a protected field access in subclass
+//    Test rule 3.66
+//
+// Result:
+//      9
+//
+// History:
+//    created on 09/01/2025
+
+class MySuperClass{
+    Dummy dummy = new Dummy();
+    int b = dummy.a;
+}
+
+class Dummy extends MySuperClass{
+    protected int a = 9;
+}
+
+{
+    MySuperClass d = new MySuperClass();
+    println(d.b);
+}

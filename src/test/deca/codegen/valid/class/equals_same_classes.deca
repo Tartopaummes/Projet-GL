@@ -1,0 +1,25 @@
+// Description:
+//    Test equals method on classes
+//
+// Result:
+//[Begin Result]
+//Not equal
+//[End Result]
+//
+// History:
+//    created on 14/01/2025
+
+
+class A {
+     int a = 1;
+}
+
+{
+    A a = new A();
+    A b = new A();
+    if (a.equals(b)) {
+        println("Equal");
+    } else {
+        println("Not equal");
+    }
+}

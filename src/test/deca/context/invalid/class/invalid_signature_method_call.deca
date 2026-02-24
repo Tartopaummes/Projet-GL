@@ -1,0 +1,23 @@
+// Description:
+//    Test a method call with the wrong argument number
+//    Test rule 3.74
+//
+// Result:
+// [Begin Result]
+//invalid_signature_method_call.deca:22:5: Method myMethod required 0 argument(s) but found 1 argument(s). Rule 3.74.
+// [End Result]
+//
+// History:
+//    created on 12/01/2025
+
+
+class MyClass {
+    int myMethod(){
+        return 1;
+    }
+}
+
+{
+    MyClass m = new MyClass();
+    m.myMethod(3);
+}

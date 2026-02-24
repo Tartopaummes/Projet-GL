@@ -1,0 +1,22 @@
+// Description:
+//    Test == between class and int
+//    Test rule 3.33
+//
+// Result:
+// [Begin Result]
+//invalid_cmp_operation.deca:21:18: Unsupported operation '==' between types MyClass and int. (Rule 3.33)
+// [End Result]
+//
+// History:
+//    created on 14/01/2025
+
+
+class MyClass {
+
+}
+
+
+{
+    MyClass m = new MyClass();
+    boolean a = m == 2;
+}

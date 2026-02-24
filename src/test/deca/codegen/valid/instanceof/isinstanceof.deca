@@ -1,0 +1,23 @@
+// Description:
+//    test of instanceof
+// Resultat:
+//[Begin Result]
+//OK
+//[End Result]
+//
+// History:
+//    créé le 14/01/2025
+
+class Test {
+    void test(){
+        println("OK");
+    }
+
+}
+
+{
+    Test t = new Test();
+    if (t instanceof Test) {
+        t.test();
+    }
+}

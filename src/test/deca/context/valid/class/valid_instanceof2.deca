@@ -1,0 +1,31 @@
+// Description:
+//    Test of instanceof with a non-class type (int).
+//    Test rule 3.40
+//
+// Result:
+// [Begin Result]
+//ok
+
+// [End Result]
+//
+//    created on 13/01/2025
+
+
+class MyClass {
+    int age;
+    int hello() {
+            println("Hello World !");
+            return 1;
+        }
+}
+
+
+{
+    int test=2;
+    MyClass a = new MyClass();
+    if(a instanceof MyClass){
+       print("ok");
+    }
+
+}
+

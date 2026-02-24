@@ -1,0 +1,17 @@
+// Description:
+//    tests printx on variables to check if they have the correct value
+//
+// [Begin Result]
+//1.00000e+001.00000e+00
+//
+// [End Result]
+//
+// Historique:
+//    cree le 01/01/2025
+
+{
+    float a = 1;
+    float b = a;
+    print(a);
+    print(b);
+}

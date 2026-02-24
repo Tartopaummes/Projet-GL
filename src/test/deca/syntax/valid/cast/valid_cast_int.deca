@@ -1,0 +1,12 @@
+// Description:
+//    Tests a syntactically correct program for a valid cast expression
+//
+// Results:
+//    No errors.
+//
+// History:
+//    created on 07/01/2025
+
+{
+    int a = (int) (10.5);
+}

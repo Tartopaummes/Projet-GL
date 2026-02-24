@@ -1,0 +1,15 @@
+// Description:
+// Test invalid cast between types with different compatibility
+// Test rule 3.29
+//
+// [Begin Result]
+//invalid_cast_numeric_to_class.deca:14:16: Invalid cast from int to MyClass. Rule 3.39.
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+class MyClass {}
+
+{
+    MyClass c = (MyClass)(42); // Erreur : Conversion entre type numérique et classe non autorisée
+}

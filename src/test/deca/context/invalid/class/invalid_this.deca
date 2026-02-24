@@ -1,0 +1,15 @@
+// Description:
+//    Test of using this in the main
+//    Test rule 3.43
+//
+// Result:
+// [Begin Result]
+//invalid_this.deca:14:12: 'this' used outside of a class. Rule 3.43.
+// [End Result]
+//
+// History:
+//    created on 12/01/2025
+
+{
+    int a = this.getInt();
+}

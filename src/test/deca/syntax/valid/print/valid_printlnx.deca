@@ -1,0 +1,14 @@
+// Description:
+//    Tests a valid program for a printlnx call
+//
+// Results:
+//    Hello Hexgent 0x423c0000
+//    Your mission is to skip a line
+//
+// History:
+//    created on 17/12/2024
+
+{
+        printlnx("Hello Hexgent ", 47.0, ".");
+        printlnx("Your mission is to skip a line.");
+}

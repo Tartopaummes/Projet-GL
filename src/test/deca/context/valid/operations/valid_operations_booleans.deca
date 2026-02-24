@@ -1,0 +1,38 @@
+// Description:
+//      test valid for boolean operation. The 2 operands are both booleans
+//      Test part of rule 3.33
+//
+// Resultats:
+//
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+   boolean a;
+   
+   // AND
+   a = true && true;
+   a = false &&  false;
+   a = true &&  false;
+   a = false &&  true;
+
+   //OR
+   a = true || true;
+   a = false || false;
+   a = true || false;
+   a = false || true;
+
+   //NEQ
+   a = true != true;
+   a = false != false;
+   a = true != false;
+   a = false != true;
+
+   //EQ
+   a = true == true;
+   a = false == false;
+   a = true == false;
+   a = false == true;
+
+}

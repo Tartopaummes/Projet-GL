@@ -1,0 +1,13 @@
+// Description:
+//    Tests a syntactically incorrect program for a class with an unopened brace
+//
+// Results:
+//    Line 11 : Error, unmatched brace, expected a '{'.
+//
+// History:
+//    created on 07/01/2025
+
+class TestClass
+    int a = 10;
+    float b = 10.0;
+}

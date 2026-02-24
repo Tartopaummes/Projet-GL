@@ -1,0 +1,52 @@
+// Description:
+//    Test file demonstrating various Deca features without using classes
+//
+// Results:
+//    TODO
+//
+// History:
+//    created on 06/01/2025
+
+{
+    // Variables
+    int intValue = 42;
+    float floatValue = 3.14f;
+    boolean boolValue = true;
+    String stringValue = "Hello, World!";
+
+    // Arithmetic operations
+    int a = 5;
+    int b = 3;
+    int sum = a + b;
+    int difference = a - b;
+    int product = a * b;
+    int quotient = a / b;
+    int remainder = a % b;
+
+    int j = 0;
+
+    // Control structures
+    if (intValue > 0) {
+        print("intValue is positive.");
+    } else if (intValue < 0) {
+        print("intValue is negative.");
+    } else {
+        print("intValue is zero.");
+    }
+
+    // Loops
+
+
+    while (j < 5) {
+        print("While loop iteration: " + j);
+        j = j + 1;
+    }
+
+
+
+    print("Sum: " + sum);
+    print("Difference: " + difference);
+    print("Product: " + product);
+    print("Quotient: " + quotient);
+    print("Remainder: " + remainder);
+}

@@ -1,0 +1,15 @@
+// Description:
+//    This deca program is syntactically valid but contextually invalid
+//
+// Result:
+//
+// Historique:
+//    cree le 09/01/2025
+
+{
+    int a = 0;
+
+   boolean b= true;
+    float c = a+b;
+
+}

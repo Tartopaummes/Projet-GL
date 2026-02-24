@@ -1,0 +1,18 @@
+// Description:
+//    Test invalid condition type in while.
+//    Test rule 3.35
+//
+// [Begin Result]
+//invalid_condition_while2.deca:15:12: Condition must be of type boolean. Rule 3.29.
+// [End Result]
+//
+// History:
+//    créé le 08/01/2025
+
+{
+    int x = 10;
+    int y =10;
+    while (x=y) {
+        print("Condition non booléenne");
+    }
+}

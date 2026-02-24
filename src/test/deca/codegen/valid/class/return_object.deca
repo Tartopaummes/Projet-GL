@@ -1,0 +1,36 @@
+// Description:
+//    Test returns on a class
+//
+// Result:
+//[Begin Result]
+//1
+//2
+//[End Result]
+//
+// History:
+//    created on 14/01/2025
+
+
+class A {
+     int a = 1;
+
+     B myMethod() {
+         return new B();
+     }
+}
+
+class B {
+    int a = 1;
+
+    void setA(int a) {
+        this.a = a;
+    }
+}
+
+{
+    A a = new A();
+    B b = a.myMethod();
+    b.setA(2);
+    println(a.a);
+    println(b.a);
+}

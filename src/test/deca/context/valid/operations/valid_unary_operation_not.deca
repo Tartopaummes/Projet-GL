@@ -1,0 +1,15 @@
+// Description:
+//      test valid for operation NOT.
+//      Test part of rule 3.37
+//
+// Resultats:
+
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+   boolean a;
+   // NOT
+   a= ! true;
+}

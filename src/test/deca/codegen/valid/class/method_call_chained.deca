@@ -1,0 +1,26 @@
+// Description:
+//    test of a chained method extension call
+// Resultat:
+//[Begin Result]
+//Hello
+//[End Result]
+//
+// History:
+//    créé le 14/01/2025
+
+class Test {
+    void test() {
+        print("Hello");
+    }
+}
+
+class Test2 extends Test {
+    Test2 test2() {
+        return this;
+    }
+}
+
+{
+    Test2 t = new Test2();
+    t.test2().test();
+}

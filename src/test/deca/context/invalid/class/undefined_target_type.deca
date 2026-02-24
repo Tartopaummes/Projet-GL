@@ -1,0 +1,13 @@
+// Description:
+// Test invalid cast with undefined target type
+// Test rule 0.2
+//
+// [Begin Result]
+//undefined_target_type.deca:12:4: Undeclared type identifier X. Rule 0.2.
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+{
+    X x = (X)(42); // Erreur : Type X non déclaré
+}

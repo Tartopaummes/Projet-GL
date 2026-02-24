@@ -1,0 +1,13 @@
+// Description:
+// Test invalid conversion from int to boolean
+// Test rule 3.29
+//
+// [Begin Result]
+//invalid_conversion_int_to_boolean.deca:12:16: Invalid cast from int to boolean. Rule 3.39.
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+{
+    boolean b = (boolean)(42); // Erreur : Conversion non autorisée
+}

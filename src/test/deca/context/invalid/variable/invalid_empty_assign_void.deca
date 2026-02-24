@@ -1,0 +1,15 @@
+// Description:
+//    test invalid assignation between void and bool
+//    Test rule 3.17
+//
+// Result:
+// [Begin Result]
+//invalid_empty_assign_void.deca:14:9: Variable type cannot be void. Rule 3.17.
+// [End Result]
+//
+// History:
+//    created on 06/01/2025
+
+{
+    void a;
+}

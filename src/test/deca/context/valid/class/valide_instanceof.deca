@@ -1,0 +1,18 @@
+// Description:
+//    Test of use of instanceof
+//    Test rule 3.40
+//
+// Result:
+//      Hello World !
+//      1
+//
+// History:
+//    created on 09/01/2025
+
+class Dummy {
+}
+
+{
+    Dummy d = new Dummy();
+    boolean result = d instanceof Dummy;
+}

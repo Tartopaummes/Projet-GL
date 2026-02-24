@@ -1,0 +1,17 @@
+// Description:
+// Test invalid cast between incompatible class types
+// Test rule 3.39
+//
+// [Begin Result]
+///invalid_class_cast.deca:16:10: Invalid cast from A to B. Rule 3.39.
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+class A {}
+class B {}
+
+{
+    A a = new A();
+    B b = (B)(a); // Erreur : Types de classes incompatibles
+}

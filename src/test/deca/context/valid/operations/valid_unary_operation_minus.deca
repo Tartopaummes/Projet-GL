@@ -1,0 +1,16 @@
+// Description:
+//      Test valid for operation unary MINUS.
+//      Test part of rule 3.37
+//
+// Resultats: Le format des flottants n'est pas conforme
+//    -3
+//    -3.3
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+   // MINUS
+   println(-3);
+   println(-3.3);
+}

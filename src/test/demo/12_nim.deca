@@ -1,0 +1,285 @@
+class Board{
+    protected int objectNumber;
+
+    void setObjectNumber(int objectNumber){
+        this.objectNumber = objectNumber;
+    }
+
+
+    int getObjectNumber() {
+        return objectNumber;
+    }
+
+    void removeObjects(int number){
+        if (number <= 0 || number > objectNumber){
+            println("@@@ ERROR in removeObjects : number must be strictly positiv and smaller than the number of objects");
+        }else{
+            this.objectNumber = this.objectNumber - number;
+        }
+    }
+
+    void printBoard(){
+        int i = objectNumber;
+        while (i > 0){
+            print("|", i, " ");
+            i = i - 1;
+        }
+        println();
+    }
+    
+    void prettyPrintLine(int startNumber, int endNumber){
+        int i = startNumber;
+        while (i > endNumber){
+            print(" ____  ");
+            i = i - 1;
+        }
+        println();
+
+        i = startNumber;
+        while (i > endNumber){
+            print("|    | ");
+            i = i - 1;
+        }
+        println();
+
+        i = startNumber;
+        while (i > endNumber){
+            if(i < 10){
+                print("| ", i,"  | ");
+            }else{
+                print("| ", i," | ");
+            }
+
+            i = i - 1;
+        }
+        println();
+
+        i = startNumber;
+        while (i > endNumber){
+            print("|____| ");
+            i = i - 1;
+        }
+        println();
+
+        i = startNumber;
+        while (i > endNumber){
+            print(" \\__/  ");
+            i = i - 1;
+        }
+        println();
+
+        i = startNumber;
+        while (i > endNumber){
+            print("  \\/   ");
+            i = i - 1;
+        }
+        println();
+    }
+
+    void prettyPrintBoard(){
+        int startNumber = objectNumber;
+        int endNumber = objectNumber;
+
+        while (endNumber > 0){
+            if(startNumber > 10){
+                endNumber = startNumber - 10;
+            }else{
+                endNumber = 0;
+            }
+            prettyPrintLine(startNumber, endNumber);
+            startNumber = endNumber;
+        }
+        
+    }
+
+    boolean isFinished(){
+        return objectNumber == 0;
+    }
+}
+
+class Game {
+    int currentPlayer = 1;
+    Robot robot = null;
+    boolean gameInProgress = true;
+    boolean againstRobot;
+    int robotTurn = 1;
+    Board board = new Board();
+
+
+    void explainRules() {
+        println("Welcome to Nim game !");
+        println("Players take turns removing pens from the pile !");
+        println("On his turn, a player must remove between 1 and 3 pens.");
+        println("The player who takes the last pen loses.");
+        println("To play, enter the number of pen(s) you want to remove.");
+    }
+
+    void askPlayAgainstRobot(){
+        int input;
+        boolean valid_input = false;
+        println("You can play against a friend or against the robot.");
+        while(!valid_input) {
+            println("Do you want to play against the robot (0=no, 1=yes) ? ");
+            input = readInt();
+            if (input != 0 && input != 1) {
+                println("Please enter 0 or 1.");
+            } else {
+                valid_input = true;
+            }
+        }
+        if(input ==1){
+            this.robot = new Robot();
+            this.againstRobot = true;
+            this.askStart();
+        }else{
+            this.againstRobot = false;
+        }
+    }
+
+    void askStart(){
+        int input;
+        boolean valid_input = false;
+        while(!valid_input) {
+            println("Do you want to start (0=no, 1=yes) ? ");
+            input = readInt();
+            if (input != 0 && input != 1) {
+                println("Please enter 0 or 1.");
+            } else {
+                valid_input = true;
+            }
+        }
+        if(input ==1){
+            this.robotTurn = 2;
+        }
+    }
+
+    void askObjectNumber(){
+        int input;
+        boolean valid_input = false;
+        while(!valid_input) {
+            println("Choose the initial number of pens : ");
+            input = readInt();
+            if (input <= 3 || input > 50) {
+                println("Please enter an integer between 4 and 50");
+            } else {
+                valid_input = true;
+            }
+        }
+        board.setObjectNumber(input);
+    }
+
+    void setupGame() {
+        askPlayAgainstRobot();
+        askObjectNumber();
+    }
+
+    int askRemoveObjects() {
+        int input;
+        boolean valid_input = false;
+
+        while (!valid_input) {
+            println("How many pens would you like to delete ? 1, 2 or 3 ? ");
+            input = readInt();
+            if (input >= 1 && input <= 3) {
+                valid_input = false;
+                if (input <= board.getObjectNumber()) {
+                    return input;
+                } else {
+                    println("Only ", board.getObjectNumber(), " items left, please enter a number less than or equal to ", board.getObjectNumber());
+                }
+            } else {
+                println("Please enter an integer between 1 and 3.");
+            }
+        }
+    }
+
+    int otherPlayer(){
+        if (this.currentPlayer == 1){
+            return 2;
+        }else{
+            return 1;
+        }
+    }
+
+    void changePlayer(){
+        this.currentPlayer = otherPlayer();
+    }
+
+    void check_victory(){
+        if(board.isFinished()){
+            this.gameInProgress = false;
+            if (this.againstRobot){
+                if (otherPlayer() == robotTurn){
+                    println("The Robot wins !");
+                }else{
+                    println("You win !");
+                }
+            }else{
+                println("Player ", otherPlayer(), " wins !");
+            }
+
+
+        }
+    }
+
+    void robotPlay(){
+        int n = robot.play(board.getObjectNumber());
+        println("The robot removes ", n, " pen(s).");
+        board.removeObjects(n);
+    }
+
+
+    void play(){
+        this.explainRules();
+        this.setupGame();
+        while (gameInProgress){
+            if(this.againstRobot){
+                if(this.currentPlayer == robotTurn){
+                    println("The Robot's turn");
+                }else{
+                    println("Your turn");
+                }
+            }else{
+                println("Player ", currentPlayer, " turn");
+            }
+
+            board.prettyPrintBoard();
+            if(this.currentPlayer == robotTurn && this.againstRobot){
+                robotPlay();
+            }else{
+                board.removeObjects(this.askRemoveObjects());
+            }
+            check_victory();
+            changePlayer();
+
+        }
+
+    }
+
+
+}
+
+class Robot{
+
+    //return the number of objects the robot want removing
+    int play(int numberObjectsRemaining){
+        int i =1;
+        while (i <= 3){
+            if(((numberObjectsRemaining-i) % 4)==1){
+                //left a number of object that is a multiple of 4 for the left player
+                return i;
+            }
+            i = i + 1;
+        }
+        //Can't "win" here so the number of object to remove doesn't matter, so by deffault it will be 1
+        return 1;
+
+    }
+}
+
+{
+    Game game = new Game();
+    game.play();
+
+
+}

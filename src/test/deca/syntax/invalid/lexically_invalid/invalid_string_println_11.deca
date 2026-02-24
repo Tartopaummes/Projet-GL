@@ -1,0 +1,12 @@
+// Description:
+//    Tests a syntactically incorrect program for a println call with an invalid string argument (\n)
+//
+// Results:
+//    Line 11 : Error, invalid string. Printed string should not contain a ('\n').
+//
+// History:
+//    created on 17/12/2024
+
+{
+        println("Hello, I can't skip lines.\n");
+}

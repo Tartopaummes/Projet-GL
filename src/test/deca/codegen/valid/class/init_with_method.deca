@@ -1,0 +1,34 @@
+// Description:
+//    Init a class field with call of a method
+//
+// Result:
+//[Begin Result]
+//42
+//0
+//42
+//[End Result]
+//
+// History:
+//    created on 20/01/2025
+
+class Test {
+    int b = initB();
+    int a = 42;
+
+    int initB(){
+        return this.a;
+    }
+
+}
+
+class Test2 {
+    Test t = new Test();
+    int b = t.initB();
+}
+{
+    Test t = new Test();
+    Test2 t2 = new Test2();
+    println(t.a);
+    println(t.b);
+    println(t2.b);
+}

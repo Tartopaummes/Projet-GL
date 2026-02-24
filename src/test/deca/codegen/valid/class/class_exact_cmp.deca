@@ -1,0 +1,44 @@
+// Description:
+//    Test class cmp
+// Resultat:
+//[Begin Result]
+//OK
+//OK
+//OK
+//OK
+//[End Result]
+//
+// History:
+//    créé le 13/01/2025
+
+class Test {
+}
+
+{
+    Test a = new Test();
+    Test b = new Test();
+
+    if(a == a){
+        println("OK");
+    }else{
+        println("KO");
+    }
+
+    if(a != a){
+        println("K0");
+    }else{
+        println("OK");
+    }
+
+    if(a != b){
+        println("OK");
+    }else{
+        println("KO");
+    }
+
+    if(a == b){
+        println("K0");
+    }else{
+        println("OK");
+    }
+}

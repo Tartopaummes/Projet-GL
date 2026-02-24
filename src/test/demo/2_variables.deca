@@ -1,0 +1,9 @@
+
+
+{
+    float a = 1.0;
+    println(a);
+    println(a=4);
+    println(a);
+
+}

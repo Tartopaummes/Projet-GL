@@ -1,0 +1,28 @@
+// Description:
+//      test valid for operation equals
+//
+// Result:
+//[Begin Result]
+//OK
+//OK
+//[End Result]
+//
+// History:
+//    created on 17/01/2025
+
+{
+    int a = 1;
+    int b = 1;
+    int c = 2;
+    if (a == b){
+        println("OK");
+    }else{
+        println("KO");
+    }
+
+    if (a == c){
+        println("KO");
+    }else{
+        println("OK");
+    }
+}

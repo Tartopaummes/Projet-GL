@@ -1,0 +1,16 @@
+// Description:
+//    Tests a valid program for a variable assignation
+//
+// Results:
+//
+//
+// History:
+//    created on 17/12/2024
+
+{
+        int a = 1;
+        float b = 1.0;
+        boolean c = true;
+        void d;
+        Object e;
+}

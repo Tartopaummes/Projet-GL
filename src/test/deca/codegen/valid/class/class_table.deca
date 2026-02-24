@@ -1,0 +1,31 @@
+// Description:
+//    Test simple with class definition with simple methods
+// Resultat:
+//[Begin Result]
+//[End Result]
+//
+// History:
+//    créé le 09/01/2025
+
+class Test {
+    void test() {
+        int a;
+        a = 1;
+        print(a);
+    }
+
+    void test2() {
+        int a;
+        a = 2;
+        print(a);
+    }
+}
+
+class Main {
+    void main() {
+        Test t;
+        t = new Test();
+        t.test();
+        t.test2();
+    }
+}

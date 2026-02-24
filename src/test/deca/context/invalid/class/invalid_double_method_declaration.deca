@@ -1,0 +1,26 @@
+// Description:
+//    Test of a double declaration method (of the same type) in the same class
+//    Test rule 2.6
+//
+// Result:
+// [Begin Result]
+//invalid_double_method_declaration.deca:19:8: Method myMethod is already declared in class. Rule 2.6.
+// [End Result]
+//
+// History:
+//    created on 12/01/2025
+
+
+class MyClass {
+    int myMethod(){
+        return 1;
+    }
+
+    int myMethod(){
+        return 0;
+    }
+}
+
+{
+    //empty main
+}

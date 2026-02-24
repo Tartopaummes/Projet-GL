@@ -1,0 +1,39 @@
+// Description:
+//      test all arithmetic operations
+//
+// Input:
+//[Begin Input]
+//3
+//4
+//[End Input]
+//
+// Result:
+//[Begin Result]
+//Enter a value for a (int):
+//Enter a value for b (int):
+//a + b = 7
+//a - b = -1
+//a * b = 12
+//a / b = 0
+//a % b = 3
+//[End Result]
+//
+//
+// History:
+//    created on 06/01/2025
+
+{
+
+    int a;
+    int b;
+
+    println("Enter a value for a (int):");
+    a = readInt();
+    println("Enter a value for b (int):");
+    b = readInt();
+    println("a + b = ", a + b);
+    println("a - b = ", a - b);
+    println("a * b = ", a * b);
+    println("a / b = ", a / b);
+    println("a % b = ", a % b);
+}

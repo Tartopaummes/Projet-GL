@@ -1,0 +1,22 @@
+// Description:
+//    Test of a double declaration param (of the same type) in the same method
+//    Test rule 3.12
+//
+// Result:
+// [Begin Result]
+//invalid_double_param_declaration.deca:15:24: Parameter p is already declared in this method. Rule 3.12.
+// [End Result]
+//
+// History:
+//    created on 12/01/2025
+
+
+class MyClass {
+    int myMethod(int p, int p){
+        return 1;
+    }
+}
+
+{
+    //empty main
+}

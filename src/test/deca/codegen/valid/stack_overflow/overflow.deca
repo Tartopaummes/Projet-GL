@@ -1,0 +1,18 @@
+// Description:
+//    Test TSTO with declaration
+// Resultat:
+//[Begin Result]
+//[End Result]
+//
+// History:
+//    créé le 14/01/2025
+
+{
+    int a;
+    int b;
+    int c;
+    int d;
+    int e;
+    int f;
+    int g;
+}

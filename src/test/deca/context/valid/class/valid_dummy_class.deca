@@ -1,0 +1,17 @@
+// Description:
+//    Test of a class declaration
+//    Test rule 1.3
+//
+// Result:
+//      All good ! :D
+//
+// History:
+//    created on 09/01/2025
+
+class Dummy {
+
+}
+
+{
+    println("All good ! :D");
+}

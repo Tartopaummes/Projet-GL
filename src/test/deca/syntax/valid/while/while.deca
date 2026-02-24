@@ -1,0 +1,49 @@
+// Description:
+//    Test file demonstrating the use of while loops in Java.
+//
+// Results:
+//    TODO
+//
+// History:
+//    created on 06/01/2025
+
+{
+    // Variables
+    int counter = 0;
+    int limit = 10;
+
+    // Simple while loop
+    while (counter < limit) {
+        print("Counter: " + counter);
+        counter = counter + 1;
+    }
+
+    // Reset counter
+    counter = 10;
+
+    // While loop with decrement
+    while (counter > 0) {
+        print("Counter: " + counter);
+        counter = counter - 1;
+    }
+
+    // While loop with a "break" statement
+    counter = 0;
+    while (true) {
+        if (counter >= limit) {
+            print("We reached the limit, maybe we should break");
+        }
+        print("Counter with 'break': " + counter);
+        counter = counter + 1;
+    }
+
+    // While loop with a "continue" statement
+    counter = 0;
+    while (counter < limit) {
+        counter = counter + 1;
+        if (counter % 2 == 0) {
+            print("Continue statement");
+        }
+        print("Counter with continue: " + counter);
+    }
+}

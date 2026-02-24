@@ -1,0 +1,12 @@
+// Description:
+//    Tests a syntactically incorrect program for a print call with an invalid string argument (\n)
+//
+// Results:
+//    Line 11 : Error, invalid string. Printed string should not contain a ('\') without escape.
+//
+// History:
+//    created on 17/12/2024
+
+{
+        print("Hello, I can't put a backslash \ without escape it.");
+}

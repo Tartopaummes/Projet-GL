@@ -1,0 +1,10 @@
+// Description:
+//    Tests a valid program with a use of class extension.
+//
+// Results:
+//
+//
+// History:
+//    created on 07/01/2025
+
+class Object extends This { }

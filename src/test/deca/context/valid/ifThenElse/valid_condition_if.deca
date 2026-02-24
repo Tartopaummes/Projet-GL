@@ -1,0 +1,17 @@
+// Description:
+//    Test valid condition type in if-then-else.
+//    Test rule 3.35
+//
+// Resultat:
+// condition non booléenne
+// History:
+//    créé le 08/01/2025
+
+{
+    boolean x = true;
+    if (x) {
+        print("Condition non booléenne");
+    } else {
+        print("Condition toujours non booléenne");
+    }
+}

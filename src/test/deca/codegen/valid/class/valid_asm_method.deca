@@ -1,0 +1,20 @@
+// Description:
+//    Test of a method with ASM body
+//
+// Result:
+// [Begin Result]
+//1
+// [End Result]
+//
+// History:
+//    created on 20/01/2025
+
+class Dummy {
+    int ret1()
+        asm("TSTO #0 \\n BOV stackOverflow \\n PUSH R2 \\n LOAD -2(LB), R2 \\n LOAD #1, R0 \\n BRA end.Dummy.ret1 \\n BRA no_return_in_non_void_error \\n end.Dummy.ret1: \\n POP R2 \\n RTS");//method who return 1
+}
+
+{
+    Dummy a = new Dummy();
+    println(a.ret1());
+}

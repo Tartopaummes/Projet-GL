@@ -1,0 +1,17 @@
+// Description:
+//    Test file demonstrating the use of changing the value of a variable in Deca
+//
+// Results:
+//    TODO
+//
+// History:
+//    created on 06/01/2025
+
+{
+    int a = 0;
+    a =  a + 1;
+    a =  a - 1;
+    a =  a * 1;
+    a =  a / 1;
+    a =  a % 1;
+}

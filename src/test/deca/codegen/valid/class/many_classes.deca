@@ -1,0 +1,20 @@
+// Description:
+//    Test simple with many empty classes
+// Resultat:
+//[Begin Result]
+//[End Result]
+//
+// History:
+//    créé le 13/01/2025
+
+class Test {
+}
+
+class Test2 {
+}
+
+class Test3 {
+}
+
+class Test4 {
+}

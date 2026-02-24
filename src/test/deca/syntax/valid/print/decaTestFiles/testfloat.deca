@@ -1,0 +1,8 @@
+// testfloat.deca
+
+{
+    print(1.0);
+    print(0.0);
+    print(0.035165135165);
+    print(2147483647.0);
+}

@@ -1,0 +1,19 @@
+// Description:
+//      test file include
+//
+// Result:
+//[Begin Result]
+//First File
+//Second File
+//Third File
+//[End Result]
+//
+//
+// History:
+//    created on 02/01/2025
+
+#include "valid_included_deca_file2.decah"
+
+
+    println("Third File");
+}

@@ -1,0 +1,12 @@
+// Description:
+//    Tests a syntactically incorrect program for a cast expression missing a cast type
+//
+// Results:
+//    Line 11 : Error, expected cast type.
+//
+// History:
+//    created on 07/01/2025
+
+{
+    int a = () 10;
+}

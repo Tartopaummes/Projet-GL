@@ -1,0 +1,15 @@
+// Description:
+//    Test of initialization a Object variable with null;
+//
+// Result:
+//
+// History:
+//    created on 14/01/2025
+
+class Dummy {
+}
+
+
+{
+    Dummy d1 = null;
+}

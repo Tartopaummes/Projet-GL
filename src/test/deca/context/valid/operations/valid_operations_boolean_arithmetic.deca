@@ -1,0 +1,49 @@
+// Description:
+//      test valid for boolean operation (comparison between floats and integers)
+//      Test part of rule 3.33
+//
+// Resultats:
+//
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+    boolean a;
+
+    //EQ
+    a = 3 == 4;
+    a = 3.3 == 6;
+    a = 6 == 3.3;
+    a = 4.4 == 4.4;
+
+    //NEQ
+    a = 3 != 4;
+    a = 3.3 != 6;
+    a = 6 != 3.3;
+    a = 4.4 != 4.4;
+
+    //LT
+    a = 3 < 4;
+    a = 3.3 < 6;
+    a = 6 < 3.3;
+    a = 4.4 < 4.4;
+
+    //GT
+    a = 3 > 4;
+    a = 3.3 > 6;
+    a = 6 > 3.3;
+    a = 4.4 > 4.4;
+
+    //LEQ
+    a = 3 <= 4;
+    a = 3.3 <= 6;
+    a = 6 <= 3.3;
+    a = 4.4 <= 4.4;
+
+    //GEQ
+    a = 3 >= 4;
+    a = 3.3 >= 6;
+    a = 6 >= 3.3;
+    a = 4.4 >= 4.4;
+}

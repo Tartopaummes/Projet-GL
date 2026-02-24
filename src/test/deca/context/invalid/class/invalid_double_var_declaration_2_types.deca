@@ -1,0 +1,24 @@
+// Description:
+//    Test of a double declaration variable (of 2 different types) in the same method
+//    Test rule 3.17
+//
+// Result:
+// [Begin Result]
+//invalid_double_var_declaration_2_types.deca:17:14: a is already defined. Rule 3.17.
+// [End Result]
+//
+// History:
+//    created on 12/01/2025
+
+
+class MyClass {
+    int myMethod(){
+        int a;
+        float a;
+        return 1;
+    }
+}
+
+{
+    //empty main
+}

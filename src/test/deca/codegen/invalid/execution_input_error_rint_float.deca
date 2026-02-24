@@ -1,0 +1,18 @@
+// Description:
+//    Test read int with input float
+//
+// Input:
+//[Begin Input]
+//1.0
+//[End Input]
+//
+// Result:
+//[Begin Result]
+//Error: Input/Output error
+//[End Result]
+//
+// History:
+//    created on 09/01/2025
+{
+    int a = readInt();
+}

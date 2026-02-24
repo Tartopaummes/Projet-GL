@@ -1,0 +1,19 @@
+// Description:
+//    Test invalid type in else-branch.
+//    Test rule 3.35
+//
+// [Begin Result]
+//invalid_else_branch_type.deca:17:17: Incompatible types, expected int but got boolean. Rule 3.28.
+// [End Result]
+//
+// History:
+//    créé le 08/01/2025
+
+{
+    int result;
+    if (true) {
+        result = 42;
+    } else {
+        result = false; // Type incompatible
+    }
+}

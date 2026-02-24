@@ -1,0 +1,14 @@
+// Description:
+//    test invalid operation DIVIDE between string and int
+//    Test rule 3.33
+//
+// [Begin Result]
+//invalid_arithmetic_op_div_string.deca:13:14: Unsupported operation '/' between types string and int. Operation '/' supported only between integer(s) and(or) float(s). (Rule 3.33)
+// [End Result]
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+    print("4" / 5);
+}

@@ -1,0 +1,7 @@
+// test3.deca
+{
+    print(42);
+    println(100);
+    printx("The answer is: ", 42);
+    printlnx("The value is: ", 100);
+}

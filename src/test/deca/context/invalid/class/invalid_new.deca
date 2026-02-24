@@ -1,0 +1,22 @@
+// Description:
+//    Test of new with type that is not a class type
+//    Test rule 3.42
+//
+// Result:
+// [Begin Result]
+//invalid_new.deca:21:16: The object int is not a class. Rule 3.42.
+// [End Result]
+//
+// History:
+//    created on 12/01/2025
+
+
+class MyClass {
+    int myMethod(){
+        int a;
+    }
+}
+
+{
+    int a = new int();
+}

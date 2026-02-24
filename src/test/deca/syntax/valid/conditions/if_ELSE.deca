@@ -1,0 +1,16 @@
+// Description:
+//    Tests a valid program with an if statement
+//
+// Results:
+//    Hello Agent 47. It seems you printed the good message once again.
+//
+// History:
+//    created on 17/12/2024
+
+{
+        if(false){
+                print("Hello Agent 47. Try again!");
+        }else{
+                print("Hello Agent 47. It seems you printed the good message once again.");
+        }
+}

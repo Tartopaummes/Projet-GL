@@ -1,0 +1,15 @@
+// Description:
+//    test invalid assignation between float and int
+//    Test rule 3.28
+//
+// [Begin Result]
+//invalid_var_assign_float_int.deca:14:11: Incompatible types, expected int but got float. Rule 3.28.
+// [End Result]
+//
+// History:
+//    created on 06/01/2025
+
+{
+   float a = 1.0;
+   int b = a;
+}

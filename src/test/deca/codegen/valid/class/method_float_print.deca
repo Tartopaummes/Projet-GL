@@ -1,0 +1,22 @@
+// Description:
+//    test of method that returns an float and use it after
+// Result:
+//[Begin Result]
+//test() = 1.00000e+00
+//test() = 0x1p+0
+//[End Result]
+//
+// History:
+//    created on 14/01/2025
+
+class Test {
+    float test( ) {
+        return 1.0;
+    }
+}
+
+{
+    Test testObj = new Test();
+    println("test() = ", testObj.test());
+    printlnx("test() = ", testObj.test());
+}

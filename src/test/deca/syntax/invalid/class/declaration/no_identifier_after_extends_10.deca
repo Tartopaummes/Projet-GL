@@ -1,0 +1,13 @@
+// Description:
+//    Tests a syntactically incorrect program for a class with no identifier after "extends"
+//
+// Results:
+//    Line 10 : Error, expected identifier after "extends".
+//
+// History:
+//    created on 07/01/2025
+
+class TestClass extends {
+    int a = 10;
+    float b = 10.0;
+}

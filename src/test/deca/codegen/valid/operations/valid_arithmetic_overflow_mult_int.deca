@@ -1,0 +1,15 @@
+// Description:
+//    Test arithmetic overflow with float operation mult
+//
+// Result:
+//[Begin Result]
+//-2147483648
+//[End Result]
+//
+// History:
+//    created on 09/01/2025
+{
+    int a= 1073741824;
+    a= a*2;
+    println(a);
+}

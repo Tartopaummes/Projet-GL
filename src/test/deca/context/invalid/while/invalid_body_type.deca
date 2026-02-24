@@ -1,0 +1,18 @@
+// Description:
+//    Test incompatible types in if-then-else branches.
+//    Test rule 3.35
+//
+// [Begin Result]
+//invalid_body_type.deca:16:12: Incompatible types, expected int but got string. Rule 3.28.
+// [End Result]
+//
+// History:
+//    créé le 08/01/2025
+
+{
+    boolean x = true;
+    int y = 42;
+     while(x) {
+        y = "42"; // Affectation incompatible
+    }
+}

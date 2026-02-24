@@ -1,0 +1,17 @@
+// Description:
+// Test valid cast from subclass to superclass
+// Test rule 3.39
+//
+// [Begin Result]
+// Aucun problème détecté
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+class A {}
+class B extends A {}
+
+{
+    B b = new B();
+    A a = (A)(b); // Conversion autorisée : sous-classe vers super-classe
+}

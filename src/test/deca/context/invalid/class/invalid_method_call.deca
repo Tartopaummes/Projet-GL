@@ -1,0 +1,18 @@
+// Description:
+//    Test simple with a class with many fields with initialization and print them
+// Result:
+// [Begin Result]
+//invalid_method_call.deca:17:18: Method callMethod is not a method identifier. Rule 3.72.
+// [End Result]
+//
+// History:
+//    created on 14/01/2025
+
+
+class Dummy {
+}
+
+{
+    Dummy dummy = new Dummy();
+    int d = dummy.callMethod(3);
+}

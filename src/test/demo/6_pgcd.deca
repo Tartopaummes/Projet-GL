@@ -1,0 +1,50 @@
+{
+    int a;
+    int b;
+    int t;
+    boolean valid_input = false;
+    int init_a;
+    int init_b;
+    println();
+    println("====================================================");
+    println();
+    println("Calcul du PGCD de a et b");
+    println();
+    while (!valid_input) {
+        print("Rentrez une valeur entière positive pour a : ");
+        a = readInt();
+        println();
+        if (a < 0) {
+            valid_input = false;
+            println("Cette valeur de a n'est pas positive");
+            println();
+        } else {
+            valid_input = true;
+        }
+    }
+    valid_input = false;
+    while (!valid_input) {
+        print("Rentrez une valeur entière positive pour b : ");
+        b = readInt();
+        println();
+        if (b < 0) {
+            valid_input = false;
+            println("Cette valeur de b n'est pas positive");
+            println();
+        } else {
+            valid_input = true;
+        }
+    }
+
+    init_a = a;
+    init_b = b;
+    while (b != 0) {
+        t = b;
+        b = a % b;
+        a = t;
+    }
+    println("Le PGCD de ", init_a, " et ", init_b, " est ", a, ".");
+    println();
+    println("====================================================");
+    println();
+}

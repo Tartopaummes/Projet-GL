@@ -1,0 +1,27 @@
+// Description:
+//    Test of instanceof with a non-class type (int).
+//    Test rule 3.40
+//
+// Result:
+// [Begin Result]
+//invalid_instanceof.deca:25:23: Right operand of 'instanceof' must be a class. Rule 3.40.
+
+// [End Result]
+//
+//    created on 13/01/2025
+
+
+class MyClass {
+    int age;
+    int hello() {
+            println("Hello World !");
+            return 1;
+        }
+}
+
+{
+    int test=2;
+    MyClass a = new MyClass();
+    boolean result = a instanceof int; // the second operand must be a class
+}
+

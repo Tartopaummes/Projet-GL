@@ -1,0 +1,21 @@
+// Description:
+//    Test simple else if statement
+// Resultat:
+//[Begin Result]
+//True
+//[End Result]
+//
+// History:
+//    créé le 08/01/2025
+
+{
+
+    if (false && true) {
+        println("False");
+    } else if (false){
+        println("False");
+    }else{
+        println("True");
+    }
+
+}

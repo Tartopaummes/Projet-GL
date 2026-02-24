@@ -1,0 +1,22 @@
+// Description:
+//    test of method that returns an int
+// Resultat:
+//[Begin Result]
+//test() = 1
+//test() = 1
+//[End Result]
+//
+// History:
+//    créé le 14/01/2025
+
+class Test {
+    int test( ) {
+        return 1;
+    }
+}
+
+{
+    Test testObj = new Test();
+    println("test() = ", testObj.test());
+    printlnx("test() = ", testObj.test());
+}

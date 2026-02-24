@@ -1,0 +1,13 @@
+// Description:
+//    Test file demonstrating the use of a single assignation in Deca
+//
+// Results:
+//    TODO
+//
+// History:
+//    created on 06/01/2025
+
+{
+    a = 0;
+
+}

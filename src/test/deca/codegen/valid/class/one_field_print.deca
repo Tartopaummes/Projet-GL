@@ -1,0 +1,18 @@
+// Description:
+//    Test simple with a class with one field with no initialization and print it
+// Resultat:
+//[Begin Result]
+//0
+//[End Result]
+//
+// History:
+//    créé le 13/01/2025
+
+class Test {
+    int a;
+}
+
+{
+    Test t = new Test();
+    print(t.a);
+}

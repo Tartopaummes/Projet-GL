@@ -1,0 +1,25 @@
+// Description:
+//    Tests print for negativ int and float
+//
+// Results:
+//-3.3-3
+//-3.3
+//-3
+//-3.3
+//
+//
+// History:
+//    created on 17/12/2024
+
+{
+        print(-3.3);
+        print(-3);
+        println(-3.3);
+        println(-3);
+        printx(-3.3);
+        printx(-13);
+        printlnx(-3.3);
+        printlnx(13);
+
+
+}

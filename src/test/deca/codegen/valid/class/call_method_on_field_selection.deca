@@ -1,0 +1,28 @@
+// Description:
+//    Call a method after a field selection
+//
+// Resultat:
+//[Begin Result]
+//42
+//[End Result]
+//
+// History:
+//    créé le 14/01/2025
+
+class Test {
+    int a = 42;
+    int returnA(){
+        return a;
+    }
+}
+
+class Dummy {
+    Test a = new Test();
+
+}
+
+{
+    Dummy dummy = new Dummy();
+    int d = dummy.a.returnA();
+    println(d);
+}

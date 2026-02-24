@@ -1,0 +1,15 @@
+// Description:
+// Test valid cast from null to a class type
+// Test rule 3.39
+//
+// [Begin Result]
+// valid_cast_null_to_class.deca: Aucun problème détecté
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+class MyClass {}
+
+{
+    MyClass obj = (MyClass)(null); // Conversion autorisée : null vers type classe
+}

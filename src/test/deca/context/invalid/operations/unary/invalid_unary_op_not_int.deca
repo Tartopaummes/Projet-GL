@@ -1,0 +1,14 @@
+// Description:
+//    test invalid unary operation NOT with int
+//    Test rule 3.37
+//
+// [Begin Result]
+//invalid_unary_op_not_int.deca:13:10: Unsupported unary operation '!' with type int. Type must be boolean. (Rule 3.37)
+// [End Result]
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+    print(! 3);
+}

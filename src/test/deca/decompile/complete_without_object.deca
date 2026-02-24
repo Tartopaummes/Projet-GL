@@ -1,0 +1,28 @@
+{
+    int a = 0;
+    boolean b, c, d;
+    float e = 1.0, f= 2.0, g = 3.0;
+    int x ;
+    x=readInt() ;
+    println(0.5*(x*x)) ;
+    a = 2;
+    a = a + 1;
+    print("a= ", a);
+    e= f + g;
+    println(12);
+    b=true;
+    if (a == 3){
+        print("a is equal to 3");
+    }else{
+        if (b==true) {
+            print("b is true");
+        }
+    }
+
+    while (a >= 0 ){
+        println(a);
+        a = a - 1;
+    }
+    printx(2);
+
+}

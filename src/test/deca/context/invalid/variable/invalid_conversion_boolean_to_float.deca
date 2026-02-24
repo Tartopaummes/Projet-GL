@@ -1,0 +1,14 @@
+// Description:
+// Test invalid conversion from boolean to float
+// Test rule 3.32
+//
+// [Begin Result]
+//invalid_conversion_boolean_to_float.deca:13:14: Invalid cast from boolean to float
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+{
+    boolean b = true;
+    float f = (float)(b); // Erreur : Conversion non autorisée
+}

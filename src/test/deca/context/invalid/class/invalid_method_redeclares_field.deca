@@ -1,0 +1,24 @@
+// Description:
+//    Test of a class method redeclaring a field
+//    Test rule 2.3
+//
+// Result:
+// [Begin Result]
+//invalid_method_redeclares_field.deca:17:8: Method a redeclares a field. Rule 2.3.
+// [End Result]
+//
+// History:
+//    created on 12/01/2025
+
+
+class MyClass {
+    int a = 0;
+
+    int a (){
+        //method a has the same name as field a
+    }
+}
+
+{
+    //empty main
+}

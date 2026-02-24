@@ -1,0 +1,20 @@
+// Description:
+//    Test simple with a class with one method that prints a string and a call to this method
+// Resultat:
+//[Begin Result]
+//Hello, World!
+//[End Result]
+//
+// History:
+//    créé le 13/01/2025
+
+class Test {
+    void test() {
+        print("Hello, World!");
+    }
+}
+
+{
+    Test t = new Test();
+    t.test();
+}

@@ -1,0 +1,17 @@
+// Description:
+//    Test of a method with ASM body
+//
+// Result:
+//
+// History:
+//    created on 09/01/2025
+
+class Dummy {
+    void myMethod()
+        asm("myMethode : LOAD RO  R1");
+
+
+}
+
+{
+}

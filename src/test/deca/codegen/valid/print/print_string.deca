@@ -1,0 +1,18 @@
+// Description:
+//    tests print and println with strings and escape char
+//
+// [Begin Result]
+//Hello World !Hello All !
+//This " is a quote.
+//This \ is a backslash.
+// [End Result]
+//
+// Historique:
+//    cree le 01/01/2025
+
+{
+   print("Hello World !");
+   println("Hello All !");
+   println("This \" is a quote.");
+   println("This \\ is a backslash.");
+}

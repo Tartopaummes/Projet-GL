@@ -1,0 +1,32 @@
+// Description:
+//    Test simple with a class with many fields with initialization and print them
+// Result:
+//
+// History:
+//    created on 14/01/2025
+
+class Test {
+    int a = 42;
+    float c;
+    int returnAddA(int add){
+        return a + add;
+    }
+
+    int return10(){
+        return 10;
+    }
+}
+
+class Dummy {
+    Test a = new Test();
+    int b ;
+    protected int c ;
+
+}
+
+{
+    Dummy dummy = new Dummy();
+    int d = dummy.a.return10();
+
+    int d2 = dummy.a.returnAddA(3);
+}

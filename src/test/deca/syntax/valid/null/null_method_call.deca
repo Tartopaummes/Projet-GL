@@ -1,0 +1,13 @@
+// Description:
+//    Tests a syntactically correct program for calling a method on a null object
+//
+// Results:
+//    No errors.
+//
+// History:
+//    created on 07/01/2025
+
+{
+    Object a = null;
+    a.toString();
+}

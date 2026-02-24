@@ -1,0 +1,35 @@
+// Description:
+//    Test the return of other object
+// Result:
+//[Begin Result]
+//Hello world
+//[End Result]
+//
+// History:
+//    created on 14/01/2025
+
+class A {
+    int value = 5;
+
+    void test(){
+        print("Hello world");
+    }
+}
+
+class B {
+    A a;
+    void setA(A a){
+        this.a = a;
+    }
+
+    A getA(){
+        return this.a;
+    }
+}
+
+{
+    A a = new A();
+    B b = new B();
+    b.setA(a);
+    b.getA().test();
+}

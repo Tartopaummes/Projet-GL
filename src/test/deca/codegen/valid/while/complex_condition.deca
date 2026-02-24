@@ -1,0 +1,19 @@
+// Description:
+//    Test while loop with a complex condition
+// Resultat:
+//[Begin Result]
+//0
+//2
+//4
+//[End Result]
+//
+// History:
+//    créé le 09/01/2025
+
+{
+    int i = 0;
+    while (i < 5 && i % 2 == 0){
+        println(i);
+        i = i + 2;
+    }
+}

@@ -1,0 +1,25 @@
+// Description:
+//    Test while loop with condition changing inside the loop
+// Resultat:
+//[Begin Result]
+//0
+//1
+//2
+//3
+//4
+//[End Result]
+//
+// History:
+//    créé le 09/01/2025
+
+{
+    int i = 0;
+    boolean condition = true;
+    while (condition){
+        println(i);
+        i = i + 1;
+        if (i >= 5){
+            condition = false;
+        }
+    }
+}

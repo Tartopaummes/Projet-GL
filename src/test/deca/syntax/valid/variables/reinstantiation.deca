@@ -1,0 +1,22 @@
+// Description:
+//    Test file demonstrating the use of reinstantiation in Deca
+//
+// Results:
+//    TODO
+//
+// History:
+//    created on 06/01/2025
+
+{
+
+    float e = 0.0;
+    int a = 0;
+    boolean i = true;
+    String k = "Hello";
+
+    e = 1.0;
+    a = 1;
+    i = false;
+    k = "World";
+
+}

@@ -1,0 +1,14 @@
+// Description:
+//    test invalid assignation between int and string
+//    Test rule 3.28
+//
+// [Begin Result]
+//invalid_assign_int_string.deca:13:11: Incompatible types, expected int but got string. Rule 3.28.
+// [End Result]
+//
+// History:
+//    cree le 06/01/2025
+
+{
+   int a = "true";
+}

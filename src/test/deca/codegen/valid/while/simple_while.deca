@@ -1,0 +1,19 @@
+// Description:
+//    Test simple while statement
+// Resultat:
+//[Begin Result]
+//First, I print this
+//Then, I print this
+//[End Result]
+// History:
+//    créé le 09/01/2025
+
+{
+    boolean b = true;
+    while (b){
+        println("First, I print this");
+        b = false;
+    }
+    println("Then, I print this");
+
+}

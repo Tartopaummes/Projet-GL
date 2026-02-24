@@ -1,0 +1,12 @@
+// Description:
+//    Test simple with a class with one field with no initialization
+// Resultat:
+//[Begin Result]
+//[End Result]
+//
+// History:
+//    créé le 13/01/2025
+
+class Test {
+    int a;
+}

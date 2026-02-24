@@ -1,0 +1,26 @@
+// Description:
+//    test of a method that has more than 16 parameters
+// Resultat:
+//[Begin Result]
+//1
+//17
+//[End Result]
+//
+// History:
+//    créé le 14/01/2025
+
+class Test {
+    void test1(int a, int b, int c, int d, int e, int f, int g, int h, int i, int j, int k, int l, int m, int n, int o, int p, int q) {
+        println(a);
+    }
+
+    void test2(int a, int b, int c, int d, int e, int f, int g, int h, int i, int j, int k, int l, int m, int n, int o, int p, int q) {
+        println(q);
+    }
+}
+
+{
+    Test t = new Test();
+    t.test1(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17);
+    t.test2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17);
+}

@@ -1,0 +1,16 @@
+// Description:
+//    tests printing variables to check if they have the correct value
+//
+// [Begin Result]
+//12.00000e+00
+// [End Result]
+//
+// Historique:
+//    cree le 01/01/2025
+
+{
+    int a = 1;
+    float b = 2;
+    print(a);
+    print(b);
+}

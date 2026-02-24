@@ -1,0 +1,13 @@
+// Description:
+// Test valid cast between identical types
+// Test rule 3.29
+//
+// [Begin Result]
+//Aucun problème détecté
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+{
+    int i = (int)(42); // Conversion autorisée : même type
+}

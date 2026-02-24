@@ -1,0 +1,75 @@
+// Description:
+//      test all arithmetic operations
+//
+// Results:
+// [Begin Result]
+//6
+//7.20000e+00
+//6
+//8.40000e+00
+//
+//3
+//-6
+//-4.20000e+00
+//
+//36
+//-1.76400e+01
+//-1.26000e+01
+//
+//12
+//1.00000e+00
+//7.00000e-01
+//
+//0
+//
+//4.02000e+01
+//[End Result]
+//
+// History:
+//    created on 06/01/2025
+
+{
+
+    int a;
+    float b;
+    int c = 3;
+    float d = 4.2;
+    a = c + c;
+    b = d+d;
+    //PLUS
+    println(a);
+    println(c + d);
+    println(c+c);
+    println(b);
+    println();
+
+    //MINUS
+    b = d - b;
+    println(a - c);
+    println(a-a-a);
+    println(b);
+    println();
+
+    //MULT
+    a = a*a;
+    println(a);
+    println(b*d);
+    println(c*b);
+    println();
+
+    //DIVIDE
+    b = c/a;
+    println(a/c);
+    println(d/d);
+    println(d/6);
+    println();
+
+    //MODULO
+    println(a%c);
+    c = a % c;
+    println();
+
+    //BIG ONE
+    println(a+b /( -3  * 4.5) + d);
+
+}

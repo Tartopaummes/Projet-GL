@@ -1,0 +1,26 @@
+// Description:
+//    Init a class field with call this
+//
+// Result:
+//[Begin Result]
+//42
+//42
+//[End Result]
+//
+// History:
+//    created on 17/01/2025
+
+class Test {
+    int a = 42;
+    int b = this.a;
+    void printB(){
+        println(b);
+        println(this.b);
+    }
+}
+
+
+{
+    Test t = new Test();
+    t.printB();
+}

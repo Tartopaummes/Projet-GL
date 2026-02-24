@@ -1,0 +1,12 @@
+// Description:
+//    Tests a syntactically correct program for assigning null to a variable
+//
+// Results:
+//    No errors.
+//
+// History:
+//    created on 07/01/2025
+
+{
+    Object a = null;
+}

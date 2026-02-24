@@ -1,0 +1,66 @@
+#!/bin/sh
+
+DECAC_HOME=$(cd "$(dirname "$0")"/../../../../ && pwd)
+
+YELLOW='\033[1;33m'
+NC='\033[0m'
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+LIGHT_BLUE='\033[1;34m'
+BROWN_ORANGE='\033[0;33m'
+
+total_errors=0
+total_tests=0
+
+
+increment_nb_tests(){
+  # Read the return values from the file
+  read err nb_tests  < "$DECAC_HOME/src/test/script/tools/return_test_values.txt"
+  total_errors=$((total_errors + err))
+  total_tests=$((total_tests + nb_tests))
+}
+
+echo ""
+echo "${YELLOW}========================================== Lexical Tests ==========================================${NC}" && echo ""
+/bin/sh "$DECAC_HOME"/src/test/script/advanced-lex.sh
+increment_nb_tests
+echo ""
+
+echo "${YELLOW}========================================== Syntax Tests ===========================================${NC}" && echo ""
+/bin/sh "$DECAC_HOME"/src/test/script/advanced-synt.sh
+increment_nb_tests
+echo ""
+
+echo "${YELLOW}========================================== Context Tests ==========================================${NC}" && echo ""
+/bin/sh "$DECAC_HOME"/src/test/script/advanced-context.sh
+increment_nb_tests
+echo ""
+
+echo "${YELLOW}========================================== Codegen Tests ==========================================${NC}" && echo ""
+/bin/sh "$DECAC_HOME"/src/test/script/advanced-codegen.sh
+increment_nb_tests
+echo ""
+
+echo "${YELLOW}========================================== Decac Options Tests =====================================${NC}" && echo ""
+/bin/sh "$DECAC_HOME"/src/test/script/advanced-decac.sh
+increment_nb_tests
+
+echo "${YELLOW}========================================== Parsing (-p) Tests =====================================${NC}" && echo ""
+/bin/sh "$DECAC_HOME"/src/test/script/decompile.sh
+increment_nb_tests
+
+
+
+echo ""
+echo "${YELLOW}----------------------------------------- Execution Report ----------------------------------------${NC}" && echo ""
+echo "Number of errors : $total_errors"
+echo "Number of tests : $total_tests"
+echo "${GREEN}All tests finished${NC}"
+if [ $total_errors -eq 0 ]
+then
+    echo "${GREEN}All tests passed${NC}"
+    exit 0
+else
+    echo "${RED}$total_errors tests failed${NC} out of ${LIGHT_BLUE}$total_tests${NC}"
+    exit 1
+fi

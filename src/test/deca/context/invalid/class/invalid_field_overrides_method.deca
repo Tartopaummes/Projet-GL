@@ -1,0 +1,25 @@
+// Description:
+//    Test of a field declaration that overrides a method from super class
+//    Test rule 2.5
+//
+// Result:
+// [Begin Result]
+//invalid_field_overrides_method.deca:20:8: Field a overrides a method from super class. Rule 2.5.
+// [End Result]
+//
+// History:
+//    created on 12/01/2025
+
+class MySuperClass{
+    int a(){
+       return 1;
+    }
+}
+
+class MyClass extends MySuperClass{
+    int a = 2;
+}
+
+{
+    //empty main
+}

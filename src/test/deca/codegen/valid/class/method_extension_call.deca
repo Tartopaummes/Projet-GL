@@ -1,0 +1,28 @@
+// Description:
+//    test of a method extension with a call to the parent method
+// Resultat:
+//[Begin Result]
+//Hello, World!
+//[End Result]
+//
+// History:
+//    créé le 14/01/2025
+
+class Test {
+    void test() {
+        print("Hello");
+    }
+}
+
+class Test2 extends Test {
+    void test2() {
+        print(", World!");
+    }
+}
+
+{
+    Test2 t = new Test2();
+    t.test();
+    t.test2();
+
+}

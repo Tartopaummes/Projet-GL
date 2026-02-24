@@ -1,0 +1,20 @@
+// Description:
+//    Test compatible types in if-then-else branches.
+//    Test rule 3.36
+//
+//
+//
+// Resultat:
+//
+// History:
+//    créé le 08/01/2025
+
+{
+    boolean x = true;
+    int y = 42;
+    if (x) {
+        y =3; // Affectation incompatible
+    } else {
+        y =4;
+    }
+}

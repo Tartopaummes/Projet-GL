@@ -1,0 +1,13 @@
+// Description:
+//    test invalid MOD between boolean and int
+//
+// [Begin Result]
+//invalid_op_mod_bool_left.deca:12:16: Unsupported operation '%' between types boolean and int. Operation '%' supported only between integers. (Rule 3.33)
+// [End Result]
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+    print(false % 2);
+}

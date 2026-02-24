@@ -1,0 +1,15 @@
+// Description:
+//    tests print and println with 32-bit floats
+//
+// [Begin Result]
+//3.40282e+381.17549e-38
+//
+// [End Result]
+//
+// Historique:
+//    cree le 01/01/2025
+
+{
+   print(3.4028235e+38); // Max 32-bit float
+   println(1.17549435e-38); // Smallest positive 32-bit float
+}

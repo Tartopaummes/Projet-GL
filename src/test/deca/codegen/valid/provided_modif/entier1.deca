@@ -1,0 +1,17 @@
+// Description:
+//    tests d'expressions entieres
+//
+// Resultats:
+//[Begin Result]
+//1
+//2
+//[End Result]
+
+{
+   int i ; 
+   i = 1;
+   println(i);
+   i = i + 1;
+   println(i);
+}
+

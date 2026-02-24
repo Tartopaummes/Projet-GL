@@ -1,0 +1,11 @@
+// Description:
+//    Tests a syntactically incorrect program for a block with crossed braces
+//
+// Results:
+//    Line 10 : Error, unmatched brace, expected a '{'.
+//
+// History:
+//    created on 17/12/2024
+
+}
+{

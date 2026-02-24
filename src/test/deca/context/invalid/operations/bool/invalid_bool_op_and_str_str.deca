@@ -1,0 +1,13 @@
+// Description:
+//    test invalid AND between str and str
+//
+// [Begin Result]
+//invalid_bool_op_and_str_str.deca:12:23: Unsupported operation '&&' between types string and string. Operation '&&' supported only between booleans. (Rule 3.33)
+// [End Result]
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+    boolean a = "abcd" && "efgh";
+}

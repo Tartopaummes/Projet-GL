@@ -1,0 +1,14 @@
+// Description:
+// Test valid cast between identical types
+// Test rule 3.39
+//
+// [Begin Result]
+//42
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+{
+    int i = (int)(42);
+    println(i);
+}

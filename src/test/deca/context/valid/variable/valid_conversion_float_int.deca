@@ -1,0 +1,13 @@
+// Description:
+//    Valid assignment with implicit conversion from int to float.
+//
+// [Begin Result]
+// No errors.
+// [End Result]
+//
+// History:
+//    Created on 06/01/2025.
+
+{
+    float f = 10; // Implicit conversion from int to float
+}

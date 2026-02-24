@@ -1,0 +1,16 @@
+// Description:
+//    Test while loop with an empty body
+// Resultat:
+//[Begin Result]
+//[End Result]
+//
+// History:
+//    créé le 09/01/2025
+
+{
+    int i = 0;
+    while (i < 5){
+        // Do nothing
+        i = i + 1;
+    }
+}

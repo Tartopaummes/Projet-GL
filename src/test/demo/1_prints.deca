@@ -1,0 +1,22 @@
+// Description:
+//    Tests a valid program for a println call
+//
+// Results:
+//    Hello Agent 47.
+//    Your mission is to skip a line.
+//    There is a quote : " here. There is a backslash : \ here.
+//    There is two backslash : \\ here.
+//
+// History:
+//    created on 22/01/2025
+
+{
+        println("Hello GL ", 34, ".");
+        println("There is a quote : \" here.");
+        println("There is a backslash : \\ here.");
+        print("Print : ");
+        printx(45, ", ");
+        printx(45.0, ", ");
+        printlnx(42);
+        printlnx(42.0);
+}

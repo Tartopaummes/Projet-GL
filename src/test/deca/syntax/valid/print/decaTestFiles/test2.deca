@@ -1,0 +1,7 @@
+// test2.deca
+{
+    print("Hello, world!");
+    println("This is a new line.");
+    printx("This is a hex value: ", 255);
+    printlnx("This is a hex value with newline: ", 255);
+}

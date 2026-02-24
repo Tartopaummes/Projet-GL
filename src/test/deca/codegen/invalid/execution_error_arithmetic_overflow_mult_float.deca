@@ -1,0 +1,15 @@
+// Description:
+//    Test arithmetic overflow with operation mult with float
+//
+// Result:
+//[Begin Result]
+//Error: Overflow during arithmetic operation
+//[End Result]
+//
+// History:
+//    created on 09/01/2025
+{
+    float a= 1.7028235e+38;
+    a= a*2;
+    println(a);
+}

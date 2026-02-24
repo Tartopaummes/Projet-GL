@@ -1,0 +1,27 @@
+// Description:
+//    This deca program test the cast and instance of for decompile
+//
+// Result:
+//OK
+// History:
+//    created on 18/01/2025
+
+class Test1{
+}
+
+class Test2 extends Test1{
+}
+{
+  Test2 t2 = new Test2();
+  Test1 t1 = (Test1)(t2);
+  Test2 t3 = null;
+  if (t2 instanceof Test1){
+    println("OK");
+  }else{
+    println("KO");
+  }
+
+  ;//no operation
+
+
+}

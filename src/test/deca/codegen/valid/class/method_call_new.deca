@@ -1,0 +1,27 @@
+// Description:
+//    test of a method call with a new
+// Resultat:
+//[Begin Result]
+//4
+//5
+//[End Result]
+//
+// History:
+//    créé le 15/01/2025
+
+class Test {
+    void test(Param p) {
+        println(p.a);
+        println(p.b);
+    }
+}
+
+class Param {
+    int a = 4;
+    int b = 5;
+}
+
+{
+    Test t = new Test();
+    t.test(new Param());
+}

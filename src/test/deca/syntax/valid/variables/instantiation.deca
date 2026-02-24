@@ -1,0 +1,27 @@
+// Description:
+//    Test file demonstrating the use of instantiation in Deca
+//
+// Results:
+//    TODO
+//
+// History:
+//    created on 06/01/2025
+
+{
+    int a = 0;
+    int b = 1;
+    int c = 2;
+    int d = 3;
+
+    float e = 0.0;
+    float f = 1.0;
+    float g = 2.0;
+    float h = 3.0;
+
+    boolean i = true;
+    boolean j = false;
+
+    String k = "Hello";
+    String l = "World";
+
+}

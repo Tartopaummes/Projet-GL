@@ -1,0 +1,19 @@
+// Description:
+// Test valid return null
+//
+// [Begin Result]
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+
+class A {
+    A myMethod() {
+        return null;
+    }
+}
+
+{
+    A a = new A();
+    A b = a.myMethod();
+}

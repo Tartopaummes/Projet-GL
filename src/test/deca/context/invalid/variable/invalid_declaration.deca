@@ -1,0 +1,13 @@
+// Description:
+//    Use of undeclared variable.
+//
+// [Begin Result]
+//invalid_declaration.deca:12:4: Undeclared identifier x. Rule 0.1.
+// [End Result]
+//
+// History:
+//    Created on 06/01/2025.
+
+{
+    x = 10;
+}

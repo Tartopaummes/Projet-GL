@@ -1,0 +1,22 @@
+// Description:
+//      Test valid for operation unary MINUS.
+//      Test part of rule 3.37
+//
+// Resultats:
+//[Begin Result]
+//-3
+//-3.30000e+00
+//-3
+//-0x1.a66666p+1
+//[End Result]
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+   // MINUS
+   println(-3);
+   println(-3.3);
+   printlnx(-3);
+   printlnx(-3.3);
+}

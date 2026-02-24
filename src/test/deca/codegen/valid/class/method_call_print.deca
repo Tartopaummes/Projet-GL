@@ -1,0 +1,24 @@
+// Description:
+//    test of a method call
+// Resultat:
+//[Begin Result]
+//Hello, World!
+//[End Result]
+//
+// History:
+//    créé le 15/01/2025
+
+class Test {
+    void test() {
+        print("Hello");
+    }
+    void test2() {
+        print(", World!");
+    }
+}
+
+{
+    Test t = new Test();
+    t.test();
+    t.test2();
+}

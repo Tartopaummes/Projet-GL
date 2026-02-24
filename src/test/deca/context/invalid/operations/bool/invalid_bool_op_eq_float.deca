@@ -1,0 +1,13 @@
+// Description:
+//    test invalid EQ between boolean and float
+//
+// [Begin Result]
+//invalid_bool_op_eq_float.deca:12:22: Unsupported operation '==' between types float and boolean. (Rule 3.33)
+// [End Result]
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+    boolean a = 46.89 == false;
+}

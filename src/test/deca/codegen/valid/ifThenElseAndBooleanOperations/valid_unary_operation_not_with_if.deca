@@ -1,0 +1,136 @@
+// Description:
+//      test valid for operation NOT, with multiple not
+//
+// Result:
+//[Begin Result]
+//OK
+//OK
+
+//OK
+//OK
+
+//OK
+//OK
+//OK
+
+//OK
+//OK
+//OK
+//OK
+//OK
+//OK
+//OK
+//OK
+//[End Result]
+//
+// History:
+//    created on 18/01/2025
+
+{
+
+    // NOT
+    if (! true){
+        println("KO");
+    }else{
+        println("OK");
+    }
+
+    if (! false){
+       println("OK");
+    }else{
+       println("KO");
+    }
+
+    println();
+
+    //Multiple not with and
+
+    if(!!!!true && !!!false){
+        println("OK") ;
+    }else{
+        println("KO");
+    }
+
+    if(!!!false && !!!!true){
+      println("OK") ;
+    }else{
+      println("KO");
+    }
+
+    println();
+    //Multiple not with or
+
+    if(!!!!false || !!!!true){
+      println("OK") ;
+    }else{
+      println("KO");
+    }
+
+    if(!!!false || !!!true){
+      println("OK") ;
+    }else{
+      println("KO");
+    }
+
+    if(!!!!false || !!!true){
+      println("KO") ;
+    }else{
+      println("OK");
+    }
+
+    println();
+    //multiple not
+    if(!!false){
+      println("KO") ;
+    }else{
+      println("OK");
+    }
+
+    if(!!!false){
+      println("OK") ;
+    }else{
+      println("KO");
+    }
+
+    if(!!!!false){
+      println("KO") ;
+    }else{
+      println("OK");
+    }
+
+    if(!!!!!false){
+      println("OK") ;
+    }else{
+      println("KO");
+    }
+
+
+    if(!!true){
+      println("OK") ;
+    }else{
+      println("KO");
+    }
+
+    if(!!!true){
+      println("KO") ;
+    }else{
+      println("OK");
+    }
+
+    if(!!!!true){
+      println("OK") ;
+    }else{
+      println("KO");
+    }
+
+    if(!!!!!true){
+      println("KO") ;
+    }else{
+      println("OK");
+    }
+
+
+
+
+
+}

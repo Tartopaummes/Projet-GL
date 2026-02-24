@@ -1,0 +1,14 @@
+// Description:
+//    test of void method that returns
+// Resultat:
+//[Begin Result]
+//[End Result]
+//
+// History:
+//    créé le 14/01/2025
+
+class Test {
+    void test() {
+
+    }
+}

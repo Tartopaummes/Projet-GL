@@ -1,0 +1,16 @@
+// Description:
+//    Test arithmetic overflow with operation minus
+//
+// Result:
+//[Begin Result]
+//2147483647
+//[End Result]
+//
+// History:
+//    created on 09/01/2025
+{
+    int a = -2147483647; //Max negative int;
+    a = a - 2;
+    println(a);
+
+}

@@ -1,0 +1,12 @@
+// Description:
+//    Tests a syntactically incorrect program for a printlnx call with a missing open parenthesis
+//
+// Results:
+//    Line 11 : Error, unexpected token. Expected a '('.
+//
+// History:
+//    created on 17/12/2024
+
+{
+        printlnx"Hello");
+}

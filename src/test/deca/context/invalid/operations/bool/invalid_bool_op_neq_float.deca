@@ -1,0 +1,13 @@
+// Description:
+//    test invalid NEQ between boolean and float
+//
+// [Begin Result]
+//invalid_bool_op_neq_float.deca:12:22: Unsupported operation '!=' between types boolean and float. (Rule 3.33)
+// [End Result]
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+    boolean a = false != 3.45;
+}

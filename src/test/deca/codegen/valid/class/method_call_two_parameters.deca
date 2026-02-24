@@ -1,0 +1,22 @@
+// Description:
+//    test of a method call with one parameter
+// Resultat:
+//[Begin Result]
+//97
+//42
+//[End Result]
+//
+// History:
+//    créé le 15/01/2025
+
+class Test {
+    void test(int a, int b) {
+        println(a);
+        println(b);
+    }
+}
+
+{
+    Test t = new Test();
+    t.test(97,42);
+}

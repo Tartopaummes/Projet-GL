@@ -1,0 +1,12 @@
+// Description:
+//    Tests a syntactically incorrect program for a block with an unclosed brace
+//
+// Results:
+//    Line 13 : Error, unmatched brace, expected a '}'.
+//
+// History:
+//    created on 17/12/2024
+
+{
+    println("Hello");
+    println("How are you");

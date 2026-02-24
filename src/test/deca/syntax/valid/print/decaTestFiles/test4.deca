@@ -1,0 +1,7 @@
+// test4.deca
+{
+    print(true);
+    println(false);
+    printx("Boolean value: ", true);
+    printlnx("Boolean value with newline: ", false);
+}

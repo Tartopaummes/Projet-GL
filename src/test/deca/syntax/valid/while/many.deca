@@ -1,0 +1,96 @@
+// Description:
+//    Tests a valid program with various uses of "while".
+//
+// Results:
+//
+//
+// History:
+//    created on 07/01/2025
+
+class TestWhile {
+    int a = 10;
+    float b = 10.0;
+    boolean c = true;
+    String d = "Hello";
+
+    void method1() {
+        // Declarations
+        int i;
+
+        // Instructions
+        i = 0;
+        while (i < 10) {
+            print(i);
+            i = i + 1;
+        }
+    }
+
+    void method2() {
+        // Declarations
+        int i;
+
+        // Instructions
+        i = 10;
+        while (i > 0) {
+            print(i);
+            i = i - 1;
+        }
+    }
+
+    void method3() {
+        // Declarations
+        int i;
+
+        // Instructions
+        i = 0;
+        while (i < 10) {
+            if (i % 2 == 0) {
+                print(i);
+            }
+            i = i + 1;
+        }
+    }
+
+    void method4() {
+        // Declarations
+        int i;
+
+        // Instructions
+        i = 0;
+        while (i < 10) {
+            if (i == 5) {
+                break;
+            }
+            print(i);
+            i = i + 1;
+        }
+    }
+
+    void method5() {
+        // Declarations
+        int i;
+
+        // Instructions
+        i = 0;
+        while (i < 10) {
+            i = i + 1;
+            if (i % 2 == 0) {
+                continue;
+            }
+            print(i);
+        }
+    }
+}
+
+{
+    // Declarations
+    TestWhile test;
+
+    // Instructions
+    test = new TestWhile();
+    test.method1();
+    test.method2();
+    test.method3();
+    test.method4();
+    test.method5();
+}

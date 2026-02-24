@@ -1,0 +1,18 @@
+// Description:
+// Test invalid cast without proper inheritance relationship
+// Test rule 3.39
+//
+// [Begin Result]
+//invalid_class_cast_no_inheritance.deca:17:10: Invalid cast from B to C. Rule 3.39.
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+class A {}
+class B extends A {}
+class C {}
+
+{
+    B b = new B();
+    C c = (C)(b); // Erreur : Héritage manquant entre les types de classes
+}

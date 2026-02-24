@@ -1,0 +1,24 @@
+// Description:
+//    Test of a class declaration
+//    Test rule 1.3
+//
+// Result:
+//      Hello World !
+//      1
+//
+// History:
+//    created on 09/01/2025
+
+class Dummy {
+    int a = 5;
+    int hello() {
+        println("Hello World !");
+        return 1;
+    }
+}
+
+{
+    Dummy d = new Dummy();
+    int a = d.hello();
+    println(a);
+}

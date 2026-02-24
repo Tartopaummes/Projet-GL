@@ -1,0 +1,38 @@
+// Description:
+//    test of a method call a LOT of weird parameters
+// Resultat:
+//[Begin Result]
+//1.30000e+01
+//5
+//Hello
+//[End Result]
+//
+// History:
+//    créé le 15/01/2025
+
+class Test {
+    float a = 4.0;
+    void test(Param p, int a, boolean b, float c) {
+        println(p.a + a + this.a + c);
+        if (b) {
+            println(p.b);
+        }
+        println("Hello");
+    }
+}
+
+class Param {
+    int a = 4;
+    int b = 5;
+
+    boolean genB(float a, int b) {
+        return (a > 0) && (a = 4) <= b && a == this.a;
+    }
+}
+
+{
+    Test t = new Test();
+    Param p = new Param();
+    float c = 4.0;
+    t.test(new Param(), 1, p.genB(c, 5), c);
+}

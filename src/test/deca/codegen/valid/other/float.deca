@@ -1,0 +1,23 @@
+// Description:
+//    tests println float
+//
+// Result:
+//[Begin Result]
+//1.00000e+00
+//0.00000e+00
+//1.22346e+09
+//0x1p+0
+//0x0p+0
+//0x1.d6f346p+26
+//[End Result]
+// Historique:
+//    cree le 01/01/2025
+
+{
+   println(1.0);
+   println(0.0);
+   println(1223456789.0);
+   printlnx(1.0);
+   printlnx(0.0);
+   printlnx(123456789.0);
+}

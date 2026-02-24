@@ -1,0 +1,12 @@
+// Description:
+//    Tests a syntactically incorrect program for a println call with a missing close parenthesis
+//
+// Results:
+//    Line 11 : Error, unmatched parenthesis. Expected a ')'.
+//
+// History:
+//    created on 17/12/2024
+
+{
+        println("Hello";
+}

@@ -1,0 +1,20 @@
+// Description:
+//    Test incompatible types in if-then-else branches.
+//    Test rule 3.36
+//
+// [Begin Result]
+//invalid_branch_type.deca:16:12: Incompatible types, expected int but got string. Rule 3.28.
+// [End Result]
+//
+// History:
+//    created on 08/01/2025
+
+{
+    boolean x = true;
+    int y = 42;
+    if (x) {
+        y = "42"; // Affectation incompatible
+    } else {
+        y =4;
+    }
+}

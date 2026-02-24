@@ -1,0 +1,29 @@
+// Description:
+//  Test valid cast from subclass to superclass with 3 classes
+//  Test rule 3.39
+//
+//Result
+// [Begin Result]
+//4
+// [End Result]
+//
+// History:
+// created on 17/01/2025
+
+class A {
+    int a = 4;
+}
+class B extends A {
+    int a = 3;
+}
+
+class C extends B {
+    int a = 2;
+
+}
+
+{
+
+    C c = new C();
+    println((A)(c).a);
+}

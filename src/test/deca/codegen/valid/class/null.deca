@@ -1,0 +1,32 @@
+// Description:
+//    Test returns on a class
+//
+// Result:
+//[Begin Result]
+//1
+//false
+//[End Result]
+//
+// History:
+//    created on 14/01/2025
+
+
+class A {
+     int a = 1;
+
+     A myMethod() {
+         return null;
+     }
+}
+
+{
+    A a = null;
+    a = new A();
+    println(a.a);
+
+    if (null instanceof A) {
+        println("true");
+    } else {
+        println("false");
+    }
+}

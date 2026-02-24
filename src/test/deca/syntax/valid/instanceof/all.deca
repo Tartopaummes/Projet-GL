@@ -1,0 +1,54 @@
+// Description:
+//    Tests a valid program with various uses of "instanceof".
+//
+// Results:
+//
+//
+// History:
+//    created on 07/01/2025
+
+class TestInstanceOf {
+    int a = 10;
+    float b = 10.0;
+    boolean c = true;
+    String d = "Hello";
+    Object e = new Object();
+
+    void method1() {
+        // Use of "instanceof" in a method
+        if (this.a instanceof int) {
+            print("a is an int");
+        }
+        if (this.b instanceof float) {
+            print("b is a float");
+        }
+        if (this.c instanceof boolean) {
+            print("c is a boolean");
+        }
+        if (this.d instanceof String) {
+            print("d is a String");
+        }
+        if (this.e instanceof Object) {
+            print("e is an Object");
+        }
+    }
+
+    boolean method2(Object obj) {
+        // Use of "instanceof" in a method with a parameter
+        return obj instanceof TestInstanceOf;
+    }
+}
+
+{
+    // Declarations
+    TestInstanceOf test;
+    Object obj;
+    boolean result;
+
+    // Instructions
+    test = new TestInstanceOf();
+    obj = new TestInstanceOf();
+    test.method1();
+    result = test.method2(obj);
+    print(result);
+}

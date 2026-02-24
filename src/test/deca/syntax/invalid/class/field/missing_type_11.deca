@@ -1,0 +1,13 @@
+// Description:
+//    Tests a syntactically incorrect program for a field declaration missing a type
+//
+// Results:
+//    Line 10 : Error, expected type.
+//
+// History:
+//    created on 07/01/2025
+
+class TestClass {
+    a = 10;
+    float b = 10.0;
+}

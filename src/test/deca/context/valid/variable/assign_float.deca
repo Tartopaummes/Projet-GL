@@ -1,0 +1,16 @@
+// Description:
+//    Assign a float and an int to a float variable
+//
+// Results:
+//    1.00000e+00
+//    1.00000e+00
+//
+// History:
+//    created on 06/01/2025
+
+{
+        float a = 1;
+        float b = 1.0;
+        println(a);
+        println(b);
+}

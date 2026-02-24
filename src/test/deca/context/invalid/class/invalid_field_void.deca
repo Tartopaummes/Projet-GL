@@ -1,0 +1,20 @@
+// Description:
+//    Test of a field declaration of type void
+//    Test rule 2.5
+//
+// Result:
+// [Begin Result]
+//invalid_field_void.deca:15:9: Field cannot be of type void. Rule 2.5.
+// [End Result]
+//
+// History:
+//    created on 12/01/2025
+
+
+class MyClass {
+    void myField;
+}
+
+{
+    //empty main
+}

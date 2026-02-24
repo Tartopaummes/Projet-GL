@@ -1,0 +1,13 @@
+// Description:
+//    Tests a syntactically incorrect program for a class with a missing name
+//
+// Results:
+//    Line 10 : Error, expected class name.
+//
+// History:
+//    created on 07/01/2025
+
+class {
+    int a = 10;
+    float b = 10.0;
+}

@@ -1,0 +1,12 @@
+// Description:
+//    This deca program test the asm method for decompile
+//
+// Result:
+//
+// History:
+//    created on 18/01/2025
+
+class Test {
+    void ass()
+        asm ("ass: LOAD R1 R0");
+}

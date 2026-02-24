@@ -1,0 +1,16 @@
+// Description:
+// Test valid null assign to class
+//
+// [Begin Result]
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+
+class A {
+
+}
+
+{
+    A a = null;
+}

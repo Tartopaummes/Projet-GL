@@ -1,0 +1,55 @@
+// Description:
+//    Test else if statements with comparison operations
+// Resultat:
+//[Begin Result]
+//True
+//False
+//False
+//True
+//True
+//[End Result]
+//
+// History:
+//    créé le 08/01/2025
+
+{
+    int a = 1;
+    float b = 1.0;
+    int c= 5;
+
+    //TRUE
+    if (a>0) {
+        println("True");
+    }else{
+        println("Shouldn't be printed");
+    }
+
+    //FALSE
+    if (a <= 0 ) {
+        println("Shouldn't be printed");
+    }else{
+        println("False");
+    }
+
+    //FALSE
+    if (c == a ) {
+        println("Shouldn't be printed");
+    }else{
+        println("False");
+    }
+
+    //TRUE
+    if (c >= a ) {
+        println("True");
+    }else{
+        println("Shouldn't be printed");
+    }
+
+    //TRUE
+    if (! ( c<b)) {
+        println("True");
+    }else{
+        println("Shouldn't be printed");
+    }
+
+}

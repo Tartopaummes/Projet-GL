@@ -1,0 +1,14 @@
+// Description:
+//    Tests a syntactically incorrect program for a method declaration missing an open brace
+//
+// Results:
+//    Line 12 : Error, expected '{'.
+//
+// History:
+//    created on 07/01/2025
+
+class TestClass {
+    void methodName() 
+        int a = 10;
+    }
+}

@@ -1,0 +1,56 @@
+// Description:
+//    Tests a valid program with a use of a lot of classes and methods.
+//
+// Results:
+//
+//
+// History:
+//    created on 07/01/2025
+
+
+class Object { }
+
+class Thing extends Object {
+    int a, b, c, d;
+    protected String e, f, g;
+    boolean h, i, j;
+}
+
+class test extends Thing {
+    void test() {
+        int a = 10;
+        int b = new Object();
+        a.this_is_a_test = 1;
+        a.this_is_a_test(b, c);
+        a.this_is_a_test = a.this_is_a_test(b, c);
+        a.this_is_a_test(b, c).this_is_a_test = 1;
+    }
+
+    Object test2(int first, float second, boolean third) {
+        this.a = first;
+        this.e = second;
+        this.h = third;
+        b = first;
+        f = second;
+        i = third;
+        return new Object();
+    }
+
+    boolean test3(Object a, Thing b) {
+        a.this_is_a_test = 1;
+        b.test2(1, 2.0, true);
+        if (a instanceof Thing) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+}
+
+{
+    test a = new test();
+    a.test();
+    a.test2(1, 2.0, true);
+    a.test3(new Object(), new Thing());
+}

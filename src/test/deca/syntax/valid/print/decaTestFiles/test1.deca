@@ -1,0 +1,4 @@
+// test1.deca
+{
+    print("toto");
+}

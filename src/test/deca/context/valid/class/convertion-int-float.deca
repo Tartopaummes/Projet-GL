@@ -1,0 +1,13 @@
+// Description:
+// Test valid cast from float to int
+// Test rule 3.29
+//
+// [Begin Result]
+//
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+{
+    int i = (int)(3.14); // Conversion autorisée : float vers int
+}

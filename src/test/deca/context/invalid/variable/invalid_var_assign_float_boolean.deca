@@ -1,0 +1,15 @@
+// Description:
+//    test invalid assignation between bool and float
+//    Test rule 3.28
+//
+// [Begin Result]
+//invalid_var_assign_float_boolean.deca:14:15: Incompatible types, expected boolean but got float. Rule 3.28.
+// [End Result]
+//
+// History:
+//    created on 06/01/2025
+
+{
+   float a = 1.0;
+   boolean b = a;
+}

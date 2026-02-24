@@ -1,0 +1,23 @@
+// Description:
+//    Test a method call with the wrong argument type
+//    Test rule 3.28
+//
+// Result:
+// [Begin Result]
+//invalid_signature_type_method_call.deca:22:15: Incompatible types, expected int but got boolean. Rule 3.28.
+// [End Result]
+//
+// History:
+//    created on 12/01/2025
+
+
+class MyClass {
+    int myMethod(int a){
+        return 1;
+    }
+}
+
+{
+    MyClass m = new MyClass();
+    m.myMethod(true);
+}

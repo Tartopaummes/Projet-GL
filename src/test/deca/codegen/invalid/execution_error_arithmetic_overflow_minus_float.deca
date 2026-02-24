@@ -1,0 +1,16 @@
+// Description:
+//    Test arithmetic overflow with float operation minus
+//
+// Result:
+//[Begin Result]
+//Error: Overflow during arithmetic operation
+//[End Result]
+//
+// History:
+//    created on 09/01/2025
+{
+    float a = -3.4028235e+38; //Max negative float;
+    a = a - 1.0e+32;
+    println(a);
+
+}

@@ -1,0 +1,14 @@
+// Description:
+//    test invalid assignation between bool and int
+//    Test rule 3.28
+//
+// [Begin Result]
+//invalid_assign_boolean_int.deca:13:15: Incompatible types, expected boolean but got int. Rule 3.28.
+// [End Result]
+//
+// History:
+//    cree le 06/01/2025
+
+{
+   boolean a = 1;
+}

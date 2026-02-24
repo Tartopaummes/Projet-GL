@@ -1,0 +1,58 @@
+// Description:
+//      test all arithmetic operations
+//
+// Results:
+// [Begin Result]
+//7
+//7.30000e+00
+//7.30000e+00
+//6.60000e+00
+//
+//-1
+//-7.00000e-01
+//7.00000e-01
+//0.00000e+00
+//
+//12
+//1.32000e+01
+//1.32000e+01
+//1.08900e+01
+//
+//2
+//8.25000e-01
+//1.25000e+00
+//1.00000e+00
+//[End Result]
+//
+// Historique:
+//    cree le 06/01/2025
+
+{
+    //PLUS
+    println(3 + 4);
+    println(3.3 + 4);
+    println(4 + 3.3);
+    println(3.3 + 3.3);
+    println();
+
+    //MINUS
+    println(3 - 4);
+    println(3.3 - 4);
+    println(4 - 3.3);
+    println(3.3 - 3.3);
+    println();
+
+    //MULT
+    println(3 * 4);
+    println(3.3 * 4);
+    println(4 * 3.3);
+    println(3.3 * 3.3);
+    println();
+
+    //DIVIDE
+    println(8 / 4);
+    println(3.3 / 4);
+    println(4 / 3.2);
+    println(3.3 / 3.3);
+
+}

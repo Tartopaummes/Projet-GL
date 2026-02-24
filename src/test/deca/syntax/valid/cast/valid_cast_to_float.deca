@@ -1,0 +1,12 @@
+// Description:
+//    Tests a syntactically correct program for a valid cast expression to float
+//
+// Results:
+//    No errors.
+//
+// History:
+//    created on 07/01/2025
+
+{
+    float a = (float) (10);
+}

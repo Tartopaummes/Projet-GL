@@ -1,0 +1,138 @@
+// Description:
+//      test valid for boolean operation. The 2 operands are both booleans
+//      Equivalent of ../operations.valid_operations_booleans.deca but test the output
+//
+// Result:
+//[Begin Result]
+//AND
+//OK
+//OK
+//OK
+//OK
+//OR
+//OK
+//OK
+//OK
+//OK
+//NEQ
+//OK
+//OK
+//OK
+//OK
+//EQ
+//OK
+//OK
+//OK
+//OK
+//[End Result]
+//
+// History:
+//    created on 02/01/2025
+
+{
+
+   // AND
+   println("AND");
+   if(true && true){
+       println("OK");
+   }else{
+       println("KO");
+   }
+
+   if(false &&  false){
+       println("KO");
+   }else{
+       println("OK");
+   }
+
+   if(true &&  false){
+       println("KO");
+   }else{
+       println("OK");
+   }
+
+   if(false &&  true){
+       println("KO");
+   }else{
+       println("OK");
+   }
+
+   //OR
+   println("OR");
+   if(true || true){
+       println("OK");
+   }else{
+       println("KO");
+   }
+
+   if(false || false){
+       println("KO");
+   }else{
+       println("OK");
+   }
+
+   if(true || false){
+       println("OK");
+   }else{
+       println("K0");
+   }
+
+   if(false || true){
+       println("OK");
+   }else{
+       println("KO");
+   }
+
+   //NEQ
+    println("NEQ");
+    if(true != true){
+      println("KO");
+    }else{
+      println("OK");
+    }
+
+    if(false != false){
+      println("KO");
+    }else{
+      println("OK");
+    }
+
+    if(true != false){
+      println("OK");
+    }else{
+      println("KO");
+    }
+
+    if(false != true){
+      println("OK");
+    }else{
+      println("KO");
+    }
+
+   //EQ
+    println("EQ");
+   if(true == true){
+       println("OK");
+   }else{
+       println("KO");
+   }
+
+   if(false == false){
+       println("OK");
+   }else{
+       println("KO");
+   }
+
+   if(true == false){
+       println("KO");
+   }else{
+       println("OK");
+   }
+
+   if(false == true){
+       println("KO");
+   }else{
+       println("OK");
+   }
+
+}

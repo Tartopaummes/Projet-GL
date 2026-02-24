@@ -1,0 +1,10 @@
+// Description:
+//    Tests an incorrect program with an incomplete string
+//
+// Results:
+//    line 10 : Error, string is not closes (end of file)
+//
+// History:
+//    created on 18/12/2024
+
+"unfinished script

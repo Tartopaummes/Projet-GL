@@ -1,0 +1,13 @@
+// Description:
+//    Tests a syntactically incorrect program for a field declaration missing an identifier
+//
+// Results:
+//    Line 10 : Error, expected identifier.
+//
+// History:
+//    created on 07/01/2025
+
+class TestClass {
+    int = 10;
+    float b = 10.0;
+}

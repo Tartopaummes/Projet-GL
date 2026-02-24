@@ -1,0 +1,15 @@
+// Description:
+// Test valid explicit conversion from float to boolean
+// Test rule 3.33
+//
+// [Begin Result]
+//1.0
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+{
+    float f = 1.0;
+    boolean b = (boolean)(f != 0.0); // Conversion explicite conditionnelle valide
+    println(f); // Affiche true
+}

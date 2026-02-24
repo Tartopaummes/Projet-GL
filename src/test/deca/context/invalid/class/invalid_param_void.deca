@@ -1,0 +1,21 @@
+// Description:
+//    Test of a param declaration of type void
+//    Test rule 2.9
+//
+// Result:
+// [Begin Result]
+//invalid_param_void.deca:14:10: Type void is not allowed for a parameter. Rule 2.9.
+// [End Result]
+//
+// History:
+//    created on 12/01/2025
+
+class MyClass{
+    int a(void p){
+       return 1;
+    }
+}
+
+{
+    //empty main
+}

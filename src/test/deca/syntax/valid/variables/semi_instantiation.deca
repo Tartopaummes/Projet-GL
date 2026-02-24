@@ -1,0 +1,21 @@
+// Description:
+//    Test file demonstrating the use of semi instantiation in Deca
+//
+// Results:
+//    TODO
+//
+// History:
+//    created on 06/01/2025
+
+{
+    int a;
+    float e;
+    boolean i;
+    String k;
+
+    a = 0;
+    e = 0.0;
+    i = true;
+    k = "Hello";
+
+}

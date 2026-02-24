@@ -1,0 +1,12 @@
+// Description:
+//    Declare a float variable
+//
+// Results:
+//
+//
+// History:
+//    created on 06/01/2025
+
+{
+        float a;
+}

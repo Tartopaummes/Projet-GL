@@ -1,0 +1,12 @@
+// Description:
+//    Tests a syntactically incorrect program whith a spelling mistake in the null keyword
+
+// Results:
+//    Line 11 : Error, expected cast type.
+//
+// History:
+//    created on 07/01/2025
+
+{
+    int a = nul;
+}

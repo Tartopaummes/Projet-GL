@@ -1,0 +1,22 @@
+// Description:
+//    Test of a return statement in a method that must return void
+//    Test rule 3.24
+//
+// Result:
+// [Begin Result]
+//invalid_return_in_void_method.deca:16:8: Return statement in a void method. Rule 3.24.
+// [End Result]
+//
+// History:
+//    created on 12/01/2025
+
+
+class MyClass {
+    void myMethod(){
+        return 1;
+    }
+}
+
+{
+    //empty main
+}

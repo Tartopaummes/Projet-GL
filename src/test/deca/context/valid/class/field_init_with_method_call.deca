@@ -1,0 +1,20 @@
+// Description:
+//    Test simple with a class with many fields with initialization and print them
+// Result:
+//
+// History:
+//    created on 14/01/2025
+
+class Test {
+}
+
+class Dummy {
+    Test a = new Test();
+    int c ;
+
+}
+
+{
+    Dummy dummy = new Dummy();
+    int d = dummy.c;
+}

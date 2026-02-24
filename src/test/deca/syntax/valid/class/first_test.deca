@@ -1,0 +1,37 @@
+// Description:
+//    Tests a valid program with a use of classes and methods.
+//
+// Results:
+//
+//
+// History:
+//    created on 07/01/2025
+
+
+class Test extends Object{
+    int a = 8;
+    protected String b = "Hello";
+    boolean c = true;
+    float d, e, f;
+
+    void test(){
+
+    }
+
+    String test2(int a, float b, boolean c){
+        int a = 10;
+        int a = new Object();
+        a.this_is_a_test = 1;
+
+        return 28.4;
+    }
+
+}
+
+class Test {
+
+}
+
+{
+    Test a = new Test();
+}

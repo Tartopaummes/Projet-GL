@@ -1,0 +1,13 @@
+// Description:
+//    test invalid EQ between boolean and string
+//
+// [Begin Result]
+//invalid_bool_op_eq_str.deca:12:21: Unsupported operation '==' between types boolean and string. (Rule 3.33)
+// [End Result]
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+    boolean a = true == "true";
+}

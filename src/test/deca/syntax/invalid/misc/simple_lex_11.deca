@@ -1,0 +1,16 @@
+// Description:
+//    Tests a lexically correct program
+//
+// Results:
+//    Line 11 : Syntax error.
+//    test_lex must not fail.
+//
+// History:
+//    created on 18/12/2024
+
+idf _other_idf
+{
+}
+(
+)
+// a comment.

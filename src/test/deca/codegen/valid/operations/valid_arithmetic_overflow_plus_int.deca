@@ -1,0 +1,16 @@
+// Description:
+//    Test arithmetic overflow with operation plus
+//
+// Result:
+//[Begin Result]
+//-2147483648
+//[End Result]
+//
+// History:
+//    created on 09/01/2025
+{
+    int a = 2147483647; //Max int;
+    a = a + 1;
+    println(a);
+
+}

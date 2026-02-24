@@ -1,0 +1,13 @@
+// Description:
+//    test invalid MOD between int and string
+//
+// [Begin Result]
+//invalid_op_mod_string_right.deca:12:15: Unsupported operation '%' between types int and string. Operation '%' supported only between integers. (Rule 3.33)
+// [End Result]
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+    print(1234 % "abc");
+}

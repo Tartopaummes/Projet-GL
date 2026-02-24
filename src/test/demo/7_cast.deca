@@ -1,0 +1,41 @@
+// Description:
+// Test valid cast from subclass to superclass
+// Test rule 3.39
+//
+// [Begin Result]
+// [End Result]
+//
+// History:
+// cree le 07/01/2025
+class Animal {
+    void coucou(){
+        int a;
+        println("Salut !");
+    }
+}
+class Vache extends Animal {
+    void coucou(){
+        println("Coucou !");
+    }
+}
+
+{
+    Vache b = new Vache();
+    Animal a = (Animal)(b);
+    b.coucou(); //print coucou
+    a.coucou(); //print salut
+
+    a = new Animal();
+
+    if (a instanceof Vache) {
+        println("a est une vache");
+    } else {
+        println("a n'est pas forcément une vache");
+    }
+
+    if (b instanceof Animal) {
+        println("b est un animal");
+    } else {
+        println("b n'est pas forcément un animal");
+    }
+}

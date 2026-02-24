@@ -1,0 +1,12 @@
+// Description:
+//    Tests a syntactically correct program for a valid cast expression to string
+//
+// Results:
+//    No errors.
+//
+// History:
+//    created on 07/01/2025
+
+{
+    string a = (string) (10);
+}

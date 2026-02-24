@@ -1,0 +1,23 @@
+// Description:
+//    test of method parameters
+//
+// Result:
+//[Begin Result]
+//OK
+//[End Result]
+//
+// History:
+//    created on 17/01/2025
+
+class Test {
+    void test(int a, int b) {
+        print("Hello");
+    }
+}
+
+{
+    Test t = new Test();
+    if (t instanceof Test){
+        println("OK");
+    }
+}

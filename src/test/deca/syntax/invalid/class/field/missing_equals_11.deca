@@ -1,0 +1,12 @@
+// Description:
+//    Tests a syntactically incorrect program for a class with missing equals sign in field declaration
+//
+// Results:
+//    Line 10 : Error, duplicate field declaration.
+//
+// History:
+//    created on 07/01/2025
+
+class TestClass {
+    int a 10;
+}

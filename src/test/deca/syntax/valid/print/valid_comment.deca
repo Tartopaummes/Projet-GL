@@ -1,0 +1,23 @@
+// Description:
+//    Tests comments
+//
+// Results:
+//  a
+//  b
+//  c
+//
+//
+// History:
+//    created on 8/01/2025
+
+{
+        int a = /* this is a valid comment*/ 0;
+        println("a");
+        //this is a comment
+        println("b");
+        /* this is also a comment*/
+        println("c");
+
+
+
+}

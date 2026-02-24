@@ -1,0 +1,13 @@
+// Description:
+//    Tests a syntactically incorrect program for a field declaration missing a semicolon
+//
+// Results:
+//    Line 10 : Error, expected ';'.
+//
+// History:
+//    created on 07/01/2025
+
+class TestClass {
+    int a = 10
+    float b = 10.0;
+}

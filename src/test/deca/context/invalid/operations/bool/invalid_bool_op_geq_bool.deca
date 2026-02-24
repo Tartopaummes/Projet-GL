@@ -1,0 +1,13 @@
+// Description:
+//    test invalid GEQ between int and bool
+//
+// [Begin Result]
+//invalid_bool_op_geq_bool.deca:12:21: Unsupported operation '>=' between types boolean and int. Operation '>=' supported only between integer(s) and(or) float(s). (Rule 3.33)
+// [End Result]
+//
+// Historique:
+//    cree le 02/01/2025
+
+{
+    boolean a = true >= 2;
+}

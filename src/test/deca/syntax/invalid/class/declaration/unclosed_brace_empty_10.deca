@@ -1,0 +1,10 @@
+// Description:
+//    Tests a syntactically incorrect program for an empty class with an unclosed brace
+//
+// Results:
+//    Line 10 : Error, unmatched brace, expected a '}'.
+//
+// History:
+//    created on 07/01/2025
+
+class TestClass {

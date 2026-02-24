@@ -1,0 +1,13 @@
+// Description:
+//    tests print and println with 32-bit integers
+//
+// [Begin Result]
+//2147483647
+// [End Result]
+//
+// Historique:
+//    cree le 01/01/2025
+
+{
+   print(2147483647); // Max 32-bit integer
+}

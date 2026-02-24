@@ -1,0 +1,13 @@
+// Description:
+//    Tests a valid program with an if statement
+//
+// Results:
+//
+// History:
+//    created on 17/12/2024
+
+{
+        if(false){
+                print("Hello Agent 47. Why would you print this?");
+        }
+}

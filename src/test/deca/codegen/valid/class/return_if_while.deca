@@ -1,0 +1,38 @@
+// Description:
+//    Test return in if and while inst
+//
+// Result:
+//[Begin Result]
+//15
+//15
+//[End Result]
+//
+// History:
+//    created on 17/01/2025
+
+class Test {
+    int whileMethod(){
+        int i=5;
+        while (i >0){
+            i = i - 1;
+            return 15;
+        }
+    }
+    int ifMethod(){
+        if(true){
+            if(true){
+                if(false){
+                    return 2;
+                }else{
+                    return 15;
+                }
+            }
+        }
+    }
+}
+
+{
+    Test t = new Test();
+    println(t.ifMethod());
+    println(t.whileMethod());
+}

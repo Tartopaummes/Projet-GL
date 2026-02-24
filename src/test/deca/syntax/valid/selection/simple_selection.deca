@@ -1,0 +1,12 @@
+// Description:
+//    Tests a valid program with a use of the selection statement.
+//
+// Results:
+//
+//
+// History:
+//    created on 17/12/2024
+
+{
+        a.this_is_a_test = 1;
+}

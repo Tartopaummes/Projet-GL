@@ -1,0 +1,247 @@
+class Board {
+    protected int x1_1 = 0;
+    protected int x1_2 = 0;
+    protected int x1_3 = 0;
+    protected int x2_1 = 0;
+    protected int x2_2 = 0;
+    protected int x2_3 = 0;
+    protected int x3_1 = 0;
+    protected int x3_2 = 0;
+    protected int x3_3 = 0;
+
+    int getCaseValue(int where) {
+        if (where == 1) {
+            return this.x1_1;
+        } else if (where == 2) {
+            return this.x1_2;
+        } else if (where == 3) {
+            return this.x1_3;
+        } else if (where == 4) {
+            return this.x2_1;
+        } else if (where == 5) {
+            return this.x2_2;
+        } else if (where == 6) {
+            return this.x2_3;
+        } else if (where == 7) {
+            return this.x3_1;
+        } else if (where == 8) {
+            return this.x3_2;
+        } else if (where == 9) {
+            return this.x3_3;
+        } else {
+            println("This case does not exist");
+            return -1;
+        }
+    }
+
+    void setCaseValue(int where, int value) {
+        if (where == 1) {
+            this.x1_1 = value;
+        } else if (where == 2) {
+            this.x1_2 = value;
+        } else if (where == 3) {
+            this.x1_3 = value;
+        } else if (where == 4) {
+            this.x2_1 = value;
+        } else if (where == 5) {
+            this.x2_2 = value;
+        } else if (where == 6) {
+            this.x2_3 = value;
+        } else if (where == 7) {
+            this.x3_1 = value;
+        } else if (where == 8) {
+            this.x3_2 = value;
+        } else if (where == 9) {
+            this.x3_3 = value;
+        } else {
+            println("This case does not exist");
+        }
+    }
+
+    boolean isCaseEmpty(int where) {
+        return getCaseValue(where) == 0;
+    }
+
+    void play(int where, int player) {
+        if(!isCaseEmpty(where)) {
+            println("This case is already taken");
+        } else {
+            this.setCaseValue(where, player);
+        }
+    }
+
+    void prettyPrintCase(int where) {
+        int value = getCaseValue(where);
+        if (value == 0) {
+            print(" ");
+        } else if (value == 1) {
+            print("X");
+        } else {
+            print("O");
+        }
+    }
+
+    void prettyPrintBoard() {
+        print(" ");
+        prettyPrintCase(1);
+        print(" | ");
+        prettyPrintCase(2);
+        print(" | ");
+        prettyPrintCase(3);
+        println();
+        println("---|---|---");
+        print(" ");
+        prettyPrintCase(4);
+        print(" | ");
+        prettyPrintCase(5);
+        print(" | ");
+        prettyPrintCase(6);
+        println();
+        println("---|---|---");
+        print(" ");
+        prettyPrintCase(7);
+        print(" | ");
+        prettyPrintCase(8);
+        print(" | ");
+        prettyPrintCase(9);
+        println();
+    }
+
+    //Here for victory check putting methods call in condition breaks the code
+
+    int checkVictoryInLine(int line) {
+        int value1 = getCaseValue(line * 3 - 2);
+        int value2 = getCaseValue(line * 3 - 1);
+        int value3 = getCaseValue(line * 3);
+        println("Checking line ", line);
+        if (value1 == value2 && value2 == value3) {
+            return value1;
+        } else {
+            return 0;
+        }
+    }
+
+
+    int checkVictoryInColumn(int column) {
+        int value1 = getCaseValue(column);
+        int value2 = getCaseValue(column + 3);
+        int value3 = getCaseValue(column + 6);
+        if (value1 == value2 && value2 == value3) {
+            return value1;
+        } else {
+            return 0;
+        }
+    }
+
+    int checkVictoryInDiagonal() {
+        int value1 = getCaseValue(1);
+        int value2 = getCaseValue(5);
+        int value3 = getCaseValue(9);
+        int value4 = getCaseValue(3);
+        int value5 = getCaseValue(7);
+        if (value1 == value2 && value2 == value3) {
+            return value1;
+        } else if (value4 == value2 && value2 == value5) {
+            return value4;
+        } else {
+            return 0;
+        }
+    }
+
+    int checkVictory() {
+    int i = 1;
+    int result = 0;
+        while (i <= 3) {
+            result = checkVictoryInLine(i);
+            if (result != 0) {
+                return result;
+            }
+            result = checkVictoryInColumn(i);
+            if (result != 0) {
+                return result;
+            }
+            i = i + 1;
+        }
+        return checkVictoryInDiagonal();
+    }
+
+    boolean isFull() {
+        int i = 1;
+        while (i <= 9) {
+            if (isCaseEmpty(i)) {
+                return false;
+            }
+            i = i + 1;
+        }
+        return true;
+    }
+
+}
+
+
+
+class TicTacToe {
+    protected int currentPlayer = 1;
+    protected Board board = new Board();
+
+    void changePlayer() {
+        currentPlayer = - currentPlayer;
+    }
+
+    void play(int where) {
+        board.play(where, currentPlayer);
+        changePlayer();
+    }
+
+    int askWhereToPlay() {
+        int where = -1;
+        while (where < 1 || where > 9) {
+            println("Where do you want to play ?");
+            where = readInt();
+            if(!board.isCaseEmpty(where)) {
+                println("This case is already taken");
+                where = -1;
+            }
+        }
+        return where;
+    }
+
+    void explainRules() {
+        println("Welcome to Tic Tac Toe !");
+        println("The goal of the game is to align 3 of your symbols in a row, a column or a diagonal.");
+        println("Player 1 is X and player 2 is O.");
+        println("To play, enter the number of the case from 1 to 9 you want to play in.");
+    }
+
+    int getCurrentPlayer() {
+        if (currentPlayer == 1) {
+            return 1;
+        } else {
+            return 2;
+        }
+    }
+
+    void playGame() {
+        int result = 0;
+        explainRules();
+        while (result == 0 && !board.isFull()) {
+            println("Player ", getCurrentPlayer(), " turn");
+            board.prettyPrintBoard();
+            play(askWhereToPlay());
+            result = board.checkVictory();
+        }
+        board.prettyPrintBoard();
+        if (result == 1) {
+            println("Player 1 wins !");
+        } else if (result == -1) {
+            println("Player 2 wins !");
+        } else {
+            println("It's a draw !");
+        }
+    }
+}
+
+{
+    TicTacToe game = new TicTacToe();
+    game.playGame();
+}

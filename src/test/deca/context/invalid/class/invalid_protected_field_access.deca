@@ -1,0 +1,20 @@
+// Description:
+//    Access to a protected object field in main
+//    Test rule 3.66
+//
+// Result:
+// [Begin Result]
+//invalid_protected_field_access.deca:19:18: Protected field access not authorized. Rule 3.66.
+// [End Result]
+//
+// History:
+//    created on 15/01/2025
+
+class Dummy {
+    protected int c ;
+}
+
+{
+    Dummy dummy = new Dummy();
+    int d = dummy.c;
+}

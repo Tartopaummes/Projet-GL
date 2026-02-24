@@ -1,0 +1,24 @@
+// Description:
+//    Test of a a method that override a super class method with the same sig but different param name
+//    Test rule 2.7
+//
+// Result:
+//
+// History:
+//    created on 12/01/2025
+
+class MySuperClass{
+    float myMethod(int a, boolean b, float c){
+        return a;
+    }
+}
+
+class MyClass extends MySuperClass{
+    float myMethod(int first, boolean second, float third){
+        return third;
+    }
+}
+
+{
+    //empty main
+}

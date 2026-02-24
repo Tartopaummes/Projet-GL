@@ -1,0 +1,16 @@
+// Description:
+//    Tests a valid program for a print call
+//
+// Results:
+//    Hello Agent 47. You shouldn't skip lines. There is a quote : " here. There is a backslash : \ here. There is two backslash : \\ here.
+//
+// History:
+//    created on 17/12/2024
+
+{
+        print("Hello Agent 47. ");
+        print("You shouldn't skip lines.");
+        print("There is a quote : \" here.");
+        print("There is a backslash : \\ here.");
+        print("There is two backslash : \\\\ here.");
+}

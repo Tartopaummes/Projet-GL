@@ -1,0 +1,33 @@
+// Description:
+//      test valid for boolean operations with class
+//
+// Result:
+//[Begin Result]
+//OK
+
+//[End Result]
+//
+// History:
+//    created on 18/01/2025
+
+
+class Test{
+    int ret0(int b){
+        return -1;
+    }
+
+    void affiche(){
+        if (ret0(2) == ret0(1) && ret0(4) == ret0(6)){
+            println("OK");
+        }else{
+            println("K0");
+        }
+    }
+}
+
+{
+    Test t = new Test();
+    t.affiche();
+
+
+}

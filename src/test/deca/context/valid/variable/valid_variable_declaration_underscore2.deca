@@ -1,0 +1,15 @@
+// Description:
+//    Valid declaration of a variable with "_"
+//
+// [Begin Result]
+// 10
+// [End Result]
+//
+// History:
+//    Created on 10/01/2025.
+
+{
+    int _ = 10;
+    print(_) ;
+
+}

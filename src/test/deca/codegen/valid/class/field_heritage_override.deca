@@ -1,0 +1,32 @@
+// Description:
+//    Test simple with two classes with fields and inheritance
+// Resultat:
+//[Begin Result]
+//1
+//2
+//3
+//2
+//4
+//[End Result]
+// History:
+//    créé le 15/01/2025
+
+class A {
+    int a = 1;
+    int b = 2;
+}
+
+class B extends A {
+    int a = 3;
+    int c = 4;
+}
+
+{
+    A a = new A();
+    B b = new B();
+    println(a.a);
+    println(a.b);
+    println(b.a);
+    println(b.b);
+    println(b.c);
+}

@@ -1,0 +1,15 @@
+// Description:
+//    Simple while loop example.
+//
+// Results:
+//    TODO
+//
+// History:
+//    created on 06/01/2025
+
+{
+    // Simple while loop
+    while (true) {
+
+    }
+}

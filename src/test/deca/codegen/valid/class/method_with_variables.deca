@@ -1,0 +1,16 @@
+// Description:
+//    test of method that uses variables inside the method
+// Resultat:
+//[Begin Result]
+//[End Result]
+//
+// History:
+//    créé le 14/01/2025
+
+class Test {
+    int test( ) {
+        int a = 1;
+        int b = 2;
+        return a + b;
+    }
+}

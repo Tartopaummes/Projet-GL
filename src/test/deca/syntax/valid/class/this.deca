@@ -1,0 +1,67 @@
+// Description:
+//    Tests a valid program with various uses of "this".
+//
+// Results:
+//
+//
+// History:
+//    created on 07/01/2025
+
+class TestThis {
+    int a = 8;
+    float b = 3.14;
+    boolean c = true;
+    String d = "Hello";
+
+    void method1() {
+        // Use of "this" to access instance variables
+        this.a = 10;
+        this.b = 6.28;
+        this.c = false;
+        this.d = "World";
+    }
+
+    int method2() {
+        // Use of "this" to call another method
+        this.method1();
+        return this.a;
+    }
+
+    float method3() {
+        // Use of "this" to return an instance variable
+        return this.b;
+    }
+
+    boolean method4() {
+        // Use of "this" to return an instance variable
+        return this.c;
+    }
+
+    String method5() {
+        // Use of "this" to return an instance variable
+        return this.d;
+    }
+
+    TestThis method6() {
+        // Use of "this" to return the current instance
+        return this;
+    }
+
+    void method7(TestThis other) {
+        // Use of "this" to compare with another instance
+        if (this == other) {
+            this.a = 0;
+        }
+    }
+}
+
+{
+    TestThis test = new TestThis();
+    int result2 = test.method2();
+    float result3 = test.method3();
+    boolean result4 = test.method4();
+    String result5 = test.method5();
+    TestThis result6 = test.method6();
+    test.method1();
+    test.method7(result6);
+}

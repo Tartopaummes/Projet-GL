@@ -1,0 +1,17 @@
+// Description:
+//    Test usage of declared variable in if-then-else.
+//    Test rule 3.28
+// Resultat:
+// Branche else valide
+// History:
+//    créé le 06/01/2025
+
+{
+    boolean cond = true;
+    int z;
+    if (cond) {
+        z = 5; // Variable 'z'  déclarée
+    } else {
+        print("Branche else valide");
+    }
+}

@@ -1,0 +1,13 @@
+// Description:
+//    Tests a syntactically incorrect program for a class with an invalid character in the class name
+//
+// Results:
+//    Line 10 : Error, invalid character in class name.
+//
+// History:
+//    created on 07/01/2025
+
+class Test-Class {
+    int a = 10;
+    float b = 10.0;
+}

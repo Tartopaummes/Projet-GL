@@ -1,0 +1,16 @@
+// Description:
+//    tests print and println with integers
+//
+// [Begin Result]
+//1.23457e+04
+//1.23457e+03
+//
+// [End Result]
+//
+// Historique:
+//    cree le 01/01/2025
+
+{
+   println(12345.6789);
+   println(1234.56789);
+}

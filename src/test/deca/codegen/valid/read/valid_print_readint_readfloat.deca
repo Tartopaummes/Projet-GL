@@ -1,0 +1,35 @@
+// Description:
+//      test all arithmetic operations
+//
+// Input:
+//[Begin Input]
+//1
+//2
+//4.5
+//5.0
+//6.999
+//[End Input]
+//
+// Result:
+//[Begin Result]
+//1
+//2
+//4.50000e+00
+//5.00000e+00
+//0x1.bfef9ep+2
+//[End Result]
+//
+//
+// History:
+//    created on 06/01/2025
+
+{
+    println(readInt());
+    print(readInt());
+    println();
+
+    println(readFloat());
+    print(readFloat());
+    println();
+    printlnx(readFloat());
+}

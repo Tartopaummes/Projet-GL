@@ -1,0 +1,11 @@
+// Description:
+//    Test simple with an empty class
+// Resultat:
+//[Begin Result]
+//[End Result]
+//
+// History:
+//    créé le 13/01/2025
+
+class Test {
+}

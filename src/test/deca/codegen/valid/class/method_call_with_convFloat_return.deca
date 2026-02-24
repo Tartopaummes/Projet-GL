@@ -1,0 +1,23 @@
+// Description:
+//    Call a method with convfloat return
+//
+// Result:
+//[Begin Result]
+//1.00000e+00
+//[End Result]
+//
+// History:
+//    created on 17/01/2025
+
+class Test {
+    float return1(){
+        return 1;
+    }
+}
+
+
+{
+    Test t = new Test();
+    float d = t.return1();
+    println(d);
+}

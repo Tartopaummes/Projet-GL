@@ -1,0 +1,12 @@
+// Description:
+//    Tests a syntactically incorrect program for a variable assignation
+//
+// Results:
+//    Line 11 : Error, unexpected token. Expected a value for the variable.
+//
+// History:
+//    created on 17/12/2024
+
+{
+    int a = ;
+}

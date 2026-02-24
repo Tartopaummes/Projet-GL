@@ -1,0 +1,25 @@
+// Description:
+//    tests expressions in various ways
+//
+// Result:
+//[Begin Result]
+//1
+//
+//[End Result]
+// History:
+//    created on 14/01/2025
+
+{
+    int a;
+    int b = 3;
+    int c;
+    int d = 4;
+    4 + 9;
+    a + c;
+    a + b;
+    a + d;
+    b + c;
+    b + d;
+    c + d;
+    println((a=1));
+}

@@ -1,0 +1,18 @@
+// Description:
+//    Test simple with a class with many fields some of them are initialized
+// Resultat:
+//[Begin Result]
+//[End Result]
+//
+// History:
+//    créé le 14/01/2025
+
+class Test {
+    int a = 0;
+    int b;
+    float c = 2.0;
+    float d;
+    boolean e = true;
+    boolean f;
+}
+
