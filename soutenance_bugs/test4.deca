@@ -1,0 +1,37 @@
+
+class Point2D {
+   int x ; // Abscisse
+   int y ; // Ordonnee
+   // Place ce point sur la diagonale, en (a, a).
+   void diag(int a) {
+      x = x + a ; 
+      y = y + a ; 
+   }
+}
+
+class Point3D extends Point2D {
+   int z ; 
+   // On redefinit la methode diag, pour tenir compte de z
+   void diag(int a) {
+      x = x + a ; 
+      y = y + a ; 
+      z = z + a ; 
+   }
+}
+      
+{
+   Point2D p1, p2 ; 
+   Point3D p3 ; 
+
+   p1 = new Point2D() ; // p1 initialise a zero : p1.x = 0 ; p1.y = 0 
+   p1.diag(1) ;         // p1.x = 1 ; p1.y = 1 ; 
+
+   p3 = new Point3D() ; // p3 initialise a zero : p3.x = 0 ; p3.y = 0 ; p3.z = 0
+   p3.diag(2) ;         // p3.x = 2 ; p3.y = 2 ; p3.z = 2
+
+   p2 = p3 ;    // p2 et p3 representent le meme point
+   p2.diag(3) ; // Liaison dynamique : Appel de Point3D.diag
+                // p2.x = 5 ; p2.y = 5 ; p2.z = 5
+   println("p3.z = ", p3.z) ; // p3.z = 5
+}
+

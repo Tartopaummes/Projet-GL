@@ -1,2 +1,2 @@
-# Projet-GL
-Repo du Projet Génie Logiciel Ensimag 2025
+# Projet Génie Logiciel, Ensimag.
+gl34, 01/01/2025.

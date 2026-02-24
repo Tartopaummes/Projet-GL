@@ -1,0 +1,49 @@
+class A {
+   A a ; 
+   int x ; 
+
+   void setX(int i) {
+      x = i ; 
+   }
+
+   int getX() {
+      return x ; 
+   }
+
+   void setA(A aa) {
+      a = aa ; 
+   }
+
+   A getA() {
+      return a ; 
+   }
+
+   void setAx(int i) {
+      a.x = i ; 
+   }
+
+   int getAx() {
+      return a.x ; 
+   }
+}
+{
+   A a, a1, a2 ; 
+
+   a2 = new A() ; 
+   a2.setX(2) ; 
+   
+   a1 = new A() ; 
+   a1.setA(a2) ; 
+   a1.setX(1) ; 
+
+   a = new A() ; 
+   a.setA(a1) ; 
+   a.setX(0) ; 
+   a.setAx(3) ; 
+
+   if (a.getAx() == 3) {
+      println("ok") ;
+   } else {
+      println("KO") ;
+   }
+}
